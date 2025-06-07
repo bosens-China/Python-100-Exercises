@@ -1,0 +1,20 @@
+import unittest
+from part_1_basics.exercise_018 import modify_student_info
+
+class TestExercise18(unittest.TestCase):
+    def test_modify_student_info(self):
+        student = {'name': 'Alice', 'age': 20, 'score': 90}
+        # 因为函数会修改原始字典，我们传递一个副本进行测试
+        modified = modify_student_info(student.copy())
+        expected = {'name': 'Alice', 'age': 20, 'score': 95, 'city': 'Beijing'}
+        self.assertDictEqual(modified, expected)
+
+        # 测试一个已有 city 的字典
+        student2 = {'name': 'Bob', 'age': 22, 'score': 80, 'city': 'Shanghai'}
+        modified2 = modify_student_info(student2.copy())
+        expected2 = {'name': 'Bob', 'age': 22, 'score': 95, 'city': 'Beijing'}
+        self.assertDictEqual(modified2, expected2)
+
+
+if __name__ == '__main__':
+    unittest.main() 

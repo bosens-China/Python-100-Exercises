@@ -1,0 +1,21 @@
+"""
+### 25. 寻找水仙花数
+
+- **描述:** 找出 100 到 999 之间所有的水仙花数。水仙花数是指一个三位数，其各位数字的立方和等于它本身（例如：153 = 1³ + 5³ + 3³）。
+- **提示:** 遍历 100 到 999。对于每个数，分离出它的百位、十位和个位数字。
+- **期待:** 程序输出 `153`, `370`, `371`, `407`。
+"""
+
+def find_narcissistic_numbers():
+    """
+    找出 100 到 999 之间的所有水仙花数
+    :return: 一个包含所有水仙花数的列表
+    """
+    # 在这里写下你的代码
+    narcissistic_numbers = []
+    return narcissistic_numbers
+
+if __name__ == '__main__':
+    numbers = find_narcissistic_numbers()
+    print("100 到 999 之间的水仙花数有:")
+    print(numbers) 
