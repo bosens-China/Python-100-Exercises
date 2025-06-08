@@ -1,18 +1,10 @@
 name: "解题分享 (Solution Submission)"
-description: "分享您对某个练习的解题思路和代码"
-title: "[解题分享] 练习 "
+description: "分享解题思路。请在标题中直接填写练习编号，例如：[解题分享] 001"
+title: "[解题分享] "
 labels: ["solution", "community"]
 assignees:
   - ""
 body:
-  - type: input
-    id: exercise-number
-    attributes:
-      label: "练习题号 (Exercise Number)"
-      description: "请输入您解答的是哪一题的编号？"
-      placeholder: "例如：001"
-    validations:
-      required: true
   - type: textarea
     id: solution-code
     attributes:
