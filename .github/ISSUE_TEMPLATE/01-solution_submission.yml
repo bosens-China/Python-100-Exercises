@@ -1,0 +1,37 @@
+name: "解题分享 (Solution Submission)"
+description: "分享您对某个练习的解题思路和代码"
+title: "[解题分享] 练习 "
+labels: ["solution", "community"]
+assignees:
+  - ""
+body:
+  - type: input
+    id: exercise-number
+    attributes:
+      label: "练习题号 (Exercise Number)"
+      description: "请输入您解答的是哪一题的编号？"
+      placeholder: "例如：001"
+    validations:
+      required: true
+  - type: textarea
+    id: solution-code
+    attributes:
+      label: "您的答案 (Your Solution)"
+      description: "请将您的 Python 代码粘贴到此处。"
+      render: python
+      placeholder: |
+        def some_function():
+            # Your code here
+            pass
+    validations:
+      required: true
+  - type: textarea
+    id: thought-process
+    attributes:
+      label: "解题思路 (Thought Process)"
+      description: "（选填）可以分享一下您的解题思路、您是如何考虑这个问题的、以及为什么您选择这样实现。"
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "其他信息 (Additional context)"
+      description: "（选填）如果您有任何其他想补充说明的信息，请在此处填写。"
