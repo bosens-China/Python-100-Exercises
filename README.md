@@ -72,7 +72,11 @@ python part_1_basics/exercise_003.py
 python part_7_projects/exercise_097.py "Beijing"
 ```
 
-### 4. 运行所有测试
+### 4. 运行测试
+
+您可以通过多种方式运行测试来检验您的代码。
+
+#### 运行所有测试
 
 本项目的核心优势之一就是拥有完善的测试。您可以在项目根目录运行以下命令，来一次性执行所有测试用例：
 
@@ -81,6 +85,17 @@ python -m unittest discover .
 ```
 
 测试结果会告诉您哪些实现是正确的，哪些是失败的。这是一个极好的检验您学习成果的方式。
+
+#### 运行单个测试文件
+
+如果您只想针对某一个练习进行测试（例如，您刚刚修改了 `part_1_basics/exercise_001.py`），您可以只运行该题对应的测试文件，这样会更快、更直接：
+
+```bash
+# 只测试第1题
+python -m unittest part_1_basics/test_exercise_001.py
+```
+
+这个方法对于调试特定问题非常有用。
 
 ## 贡献
 
