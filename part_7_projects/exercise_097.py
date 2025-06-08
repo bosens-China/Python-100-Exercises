@@ -15,39 +15,14 @@ from typing import Dict, Optional
 API_KEY = "YOUR_API_KEY_HERE" 
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 
-def get_weather(city: str) -> Optional[Dict]:
+def get_weather(city_name: str) -> dict | None:
     """
-    通过 OpenWeatherMap API 获取指定城市的天气数据。
-    :param city: 城市名称
-    :return: 包含天气信息的字典，如果失败则返回 None
+    获取指定城市的天气信息。
+    :param city_name: 城市名称 (例如, "London", "Tokyo")
+    :return: 包含天气数据的字典，或者在出错时返回 None
     """
-    if API_KEY == "YOUR_API_KEY_HERE":
-        print("错误: 请在脚本中设置你的 OpenWeatherMap API Key。")
-        return None
-
-    params = {
-        'q': city,
-        'appid': API_KEY,
-        'units': 'metric', # 使用摄氏度
-        'lang': 'zh_cn'    # 获取中文天气描述
-    }
-    
-    try:
-        response = requests.get(BASE_URL, params=params, timeout=10)
-        # 检查是否请求成功
-        response.raise_for_status()
-        return response.json()
-    except requests.exceptions.HTTPError as http_err:
-        if response.status_code == 404:
-            print(f"错误: 找不到城市 '{city}'。")
-        elif response.status_code == 401:
-            print("错误: 无效的 API Key。请检查你的 API_KEY 设置。")
-        else:
-            print(f"HTTP 错误: {http_err}")
-    except requests.exceptions.RequestException as req_err:
-        print(f"请求错误: {req_err}")
-    
-    return None
+    # 在这里写下你的代码
+    raise NotImplementedError
 
 def display_weather(weather_data: Dict):
     """

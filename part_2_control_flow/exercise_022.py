@@ -7,6 +7,18 @@
 """
 import random
 
+def check_guess(secret_number: int, guess: int) -> str:
+    """
+    检查用户的猜测并返回结果。
+    这是一个"纯函数"，易于测试。
+    
+    :param secret_number: 秘密数字
+    :param guess: 用户的猜测
+    :return: "太大了！", "太小了！", or "恭喜你，猜对了！"
+    """
+    # 在这里写下你的代码
+    raise NotImplementedError
+
 def guess_the_number_game():
     """
     猜数字游戏的主逻辑。
@@ -14,11 +26,15 @@ def guess_the_number_game():
     secret_number = random.randint(1, 100)
     print("我已经想好了一个 1 到 100 之间的数字，你来猜猜看吧！")
 
-    # 在这里写下你的代码
-    # 循环获取用户输入，并与 secret_number 比较
-    # 根据比较结果给出提示
-    pass
-
+    while True:
+        try:
+            user_guess = int(input("请输入你的猜测: "))
+            result = check_guess(secret_number, user_guess)
+            print(result)
+            if result == "恭喜你，猜对了！":
+                break
+        except ValueError:
+            print("请输入一个有效的整数！")
 
 if __name__ == '__main__':
     guess_the_number_game()

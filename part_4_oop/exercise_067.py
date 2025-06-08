@@ -9,30 +9,46 @@
 """
 
 class Person:
+    """
+    一个 Person 类，用于演示公有、受保护和私有属性的访问约定。
+    """
     def __init__(self, name: str, age: int, bank_account: str):
-        # 公有属性，可以从任何地方访问
-        self.name = name
-        # "受保护"的属性（单下划线），约定为内部使用，但仍然可以直接访问
-        self._age = age
-        # "私有"属性（双下划线），会触发名称改写
-        self.__bank_account = bank_account
+        """
+        :param name: 姓名 (公有)
+        :param age: 年龄 (受保护)
+        :param bank_account: 银行账户 (私有)
+        """
+        # 在这里写下你的代码
+        # 提示：分别使用 self.name, self._age, 和 self.__bank_account 来赋值
+        raise NotImplementedError
 
-    def display_info(self):
-        # 在类的内部，所有属性都可以正常访问
-        print(f"Name: {self.name}")
-        print(f"Age: {self._age}")
-        print(f"Bank Account (accessed from inside): {self.__bank_account}")
+    def display_info(self) -> str:
+        """
+        在类的内部，所有属性都可以正常访问。
+        返回一个包含所有信息的字符串，以便于测试。
+        """
+        # 在这里写下你的代码
+        # 提示: 返回一个类似 "Name: ..., Age: ..., Bank Account: ..." 的字符串
+        raise NotImplementedError
 
-
-# 注意：本练习旨在演示 Python 的访问控制约定。
-# 直接测试这些约定（例如，确认访问 __bank_account 会引发 AttributeError）
-# 与练习的目的（理解为什么会发生以及如何访问）相悖。
-# 因此，我们不提供 test 文件，建议直接运行此脚本并观察输出和错误。
-
+# 主程序入口，用于直接运行时进行演示
 if __name__ == '__main__':
-    p = Person("Alice", 30, "123-456-789")
+    # 假设 Person 类已经正确实现
+    class PersonDemo:
+        def __init__(self, name: str, age: int, bank_account: str):
+            self.name = name
+            self._age = age
+            self.__bank_account = bank_account
+        def display_info(self):
+            print(f"Name: {self.name}, Age: {self._age}, Bank Account: {self.__bank_account}")
 
-    print("--- 访问公有属性 ---")
+    p = PersonDemo("Alice", 30, "123-456-789")
+    print(f"公有属性: p.name -> {p.name}")
+    print(f"受保护属性: p._age -> {p._age}")
+    print("尝试直接访问私有属性 p.__bank_account 会导致 AttributeError。")
+    print(f"通过名称改写访问: p._PersonDemo__bank_account -> {p._PersonDemo__bank_account}")
+
+    print("\n--- 访问公有属性 ---")
     print(f"p.name: {p.name}")
 
     print("\n--- 访问"受保护"属性 ---")
@@ -52,4 +68,4 @@ if __name__ == '__main__':
     print("\n--- 访问被名称改写后的"私有"属性 ---")
     print("可以通过 _ClassName__attributeName 的方式访问它。")
     # 注意：下面的访问方式不推荐在实际项目中使用，这里仅为演示。
-    print(f"p._Person__bank_account: {p._Person__bank_account}") 
+    print(f"p._PersonDemo__bank_account: {p._PersonDemo__bank_account}") 

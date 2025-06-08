@@ -1,17 +1,13 @@
-import unittest
 from part_1_basics.exercise_009 import calculate_rectangle_properties
 
-class TestExercise9(unittest.TestCase):
-    def test_calculate_rectangle_properties(self):
-        # 测试 length=10, width=5
-        perimeter, area = calculate_rectangle_properties(10, 5)
-        self.assertEqual(perimeter, 30)
-        self.assertEqual(area, 50)
+def test_calculate_rectangle_properties_1():
+    """测试 length=10, width=5 的情况"""
+    perimeter, area = calculate_rectangle_properties(10, 5)
+    assert perimeter == 30
+    assert area == 50
 
-        # 测试其他值
-        perimeter, area = calculate_rectangle_properties(3, 4)
-        self.assertEqual(perimeter, 14)
-        self.assertEqual(area, 12)
-
-if __name__ == '__main__':
-    unittest.main() 
+def test_calculate_rectangle_properties_2():
+    """测试 length=3, width=4 的情况"""
+    perimeter, area = calculate_rectangle_properties(3, 4)
+    assert perimeter == 14
+    assert area == 12 

@@ -8,21 +8,15 @@
 import requests
 from typing import Optional
 
-def get_github_api_status_code() -> Optional[int]:
+def get_github_api_status_code() -> int | None:
     """
-    向 GitHub API 发送一个 GET 请求并返回其状态码。
-    :return: HTTP 状态码（整数），如果请求失败则返回 None。
+    使用 requests 库向 GitHub API (https://api.github.com) 发起 GET 请求。
+    如果请求成功（没有抛出异常），则返回响应的状态码。
+    如果发生任何 requests.exceptions.RequestException（例如超时、连接错误等），
+    则捕获异常并返回 None。
     """
-    url = "https://api.github.com"
-    try:
-        # 在这里写下你的代码
-        response = requests.get(url, timeout=10) # 设置10秒超时
-        # raise_for_status() 会在发生 4xx 或 5xx 错误时抛出异常
-        response.raise_for_status() 
-        return response.status_code
-    except requests.exceptions.RequestException as e:
-        print(f"请求失败: {e}")
-        return None
+    # 在这里写下你的代码
+    raise NotImplementedError
 
 if __name__ == '__main__':
     print("正在向 https://api.github.com 发送请求...")

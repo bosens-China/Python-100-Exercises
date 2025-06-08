@@ -10,17 +10,17 @@ from typing import List, Any
 
 def generate_random_integer_list(n: int, min_val: int, max_val: int) -> List[int]:
     """
-    生成一个包含 n 个随机整数的列表。
+    生成一个包含 n 个在 [min_val, max_val] 范围内的随机整数的列表。
     """
     # 在这里写下你的代码
-    return [random.randint(min_val, max_val) for _ in range(n)]
+    raise NotImplementedError
 
 def choose_random_item(items: List[Any]) -> Any:
     """
     从列表中随机选择一个元素。
     """
     # 在这里写下你的代码
-    return random.choice(items)
+    raise NotImplementedError
 
 if __name__ == '__main__':
     # 生成随机整数列表

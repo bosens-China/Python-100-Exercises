@@ -13,8 +13,7 @@ def get_formatted_current_time() -> str:
     :return: 格式为 "YYYY-MM-DD HH:MM:SS" 的字符串。
     """
     # 在这里写下你的代码
-    now = datetime.datetime.now()
-    return now.strftime("%Y-%m-%d %H:%M:%S")
+    raise NotImplementedError
 
 if __name__ == '__main__':
     formatted_time = get_formatted_current_time()

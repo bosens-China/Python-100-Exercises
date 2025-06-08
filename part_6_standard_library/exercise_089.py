@@ -15,14 +15,14 @@ def list_current_directory() -> List[str]:
     列出当前工作目录下的所有文件和文件夹。
     """
     # 在这里写下你的代码
-    return os.listdir('.')
+    raise NotImplementedError
 
 def join_path_components(part1: str, part2: str) -> str:
     """
     安全地拼接两个路径部分。
     """
     # 在这里写下你的代码
-    return os.path.join(part1, part2)
+    raise NotImplementedError
 
 if __name__ == '__main__':
     print("--- 列出当前目录内容 ---")

@@ -1,33 +1,18 @@
-import unittest
-import os
 from part_5_files_and_exceptions.exercise_076 import read_hello_file
 
-class TestReadFile(unittest.TestCase):
-    
-    test_filename = "test_hello.txt"
+def test_read_existing_file(tmp_path):
+    """测试读取一个已存在的文件。"""
+    test_dir = tmp_path / "sub"
+    test_dir.mkdir()
+    test_file = test_dir / "hello.txt"
     test_content = "Hello from the test!"
+    test_file.write_text(test_content, encoding='utf-8')
+    
+    content = read_hello_file(test_file)
+    assert content == test_content
 
-    def setUp(self):
-        """在每个测试开始前，创建一个临时的测试文件。"""
-        with open(self.test_filename, "w", encoding='utf-8') as f:
-            f.write(self.test_content)
-
-    def tearDown(self):
-        """在每个测试结束后，删除这个临时文件。"""
-        if os.path.exists(self.test_filename):
-            os.remove(self.test_filename)
-
-    def test_read_existing_file(self):
-        """测试读取一个已存在的文件。"""
-        content = read_hello_file(self.test_filename)
-        self.assertEqual(content, self.test_content)
-
-    def test_read_non_existing_file(self):
-        """测试读取一个不存在的文件。"""
-        # 先删除 setUp 创建的文件
-        os.remove(self.test_filename)
-        content = read_hello_file(self.test_filename)
-        self.assertEqual(content, f"Error: The file '{self.test_filename}' was not found.")
-
-if __name__ == '__main__':
-    unittest.main() 
+def test_read_non_existing_file(tmp_path):
+    """测试读取一个不存在的文件。"""
+    non_existent_file = tmp_path / "non_existent.txt"
+    content = read_hello_file(non_existent_file)
+    assert content == f"Error: The file '{non_existent_file}' was not found." 

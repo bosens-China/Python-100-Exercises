@@ -10,14 +10,11 @@ from typing import Tuple
 
 def get_sqrt_and_pi(number: float) -> Tuple[float, float]:
     """
-    计算给定数字的平方根，并返回 math.pi 的值。
-    :param number: 一个非负数
-    :return: 一个包含平方根和 pi 值的元组
+    计算一个数的平方根和圆周率 pi 的值。
+    如果输入是负数，则应抛出 ValueError。
     """
     # 在这里写下你的代码
-    square_root = math.sqrt(number)
-    pi_value = math.pi
-    return (square_root, pi_value)
+    raise NotImplementedError
 
 if __name__ == '__main__':
     num_to_sqrt = 81

@@ -1,25 +1,25 @@
-import unittest
 from part_2_control_flow.exercise_039 import find_max
 
-class TestExercise39(unittest.TestCase):
-    def test_find_max(self):
-        # 题目中的例子
-        self.assertEqual(find_max([1, 5, 2, 8, 3]), 8)
-        
-        # 包含负数的列表
-        self.assertEqual(find_max([-1, -5, -2, -8, -3]), -1)
-        
-        # 包含正负数和零的列表
-        self.assertEqual(find_max([-2, 0, 5, -8, 3]), 5)
-        
-        # 只有一个元素的列表
-        self.assertEqual(find_max([42]), 42)
-        
-        # 列表中的最大值在开头
-        self.assertEqual(find_max([10, 1, 2, 3]), 10)
+def test_find_max_positive():
+    """测试正数列表"""
+    assert find_max([1, 5, 2, 8, 3]) == 8
 
-        # 测试空列表
-        self.assertIsNone(find_max([]))
+def test_find_max_negative():
+    """测试负数列表"""
+    assert find_max([-1, -5, -2, -8, -3]) == -1
 
-if __name__ == '__main__':
-    unittest.main() 
+def test_find_max_mixed():
+    """测试混合数列表"""
+    assert find_max([-2, 0, 5, -8, 3]) == 5
+
+def test_find_max_single_element():
+    """测试单元素列表"""
+    assert find_max([42]) == 42
+
+def test_find_max_at_start():
+    """测试最大值在开头的列表"""
+    assert find_max([10, 1, 2, 3]) == 10
+
+def test_find_max_empty_list():
+    """测试空列表"""
+    assert find_max([]) is None 

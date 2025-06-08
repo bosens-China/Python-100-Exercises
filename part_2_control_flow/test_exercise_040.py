@@ -1,22 +1,21 @@
-import unittest
 from part_2_control_flow.exercise_040 import reverse_string
 
-class TestExercise40(unittest.TestCase):
-    def test_reverse_string(self):
-        # 题目中的例子
-        self.assertEqual(reverse_string("python"), "nohtyp")
-        
-        # 测试回文字符串
-        self.assertEqual(reverse_string("madam"), "madam")
-        
-        # 测试包含空格的字符串
-        self.assertEqual(reverse_string("hello world"), "dlrow olleh")
-        
-        # 测试空字符串
-        self.assertEqual(reverse_string(""), "")
-        
-        # 测试单个字符的字符串
-        self.assertEqual(reverse_string("a"), "a")
+def test_reverse_string_basic():
+    """测试基本字符串反转"""
+    assert reverse_string("python") == "nohtyp"
 
-if __name__ == '__main__':
-    unittest.main() 
+def test_reverse_string_palindrome():
+    """测试回文字符串"""
+    assert reverse_string("madam") == "madam"
+
+def test_reverse_string_with_space():
+    """测试带空格的字符串"""
+    assert reverse_string("hello world") == "dlrow olleh"
+
+def test_reverse_string_empty():
+    """测试空字符串"""
+    assert reverse_string("") == ""
+
+def test_reverse_string_single_char():
+    """测试单字符字符串"""
+    assert reverse_string("a") == "a" 

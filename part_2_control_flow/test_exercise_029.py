@@ -1,24 +1,21 @@
-import unittest
 from part_2_control_flow.exercise_029 import is_prime
 
-class TestExercise29(unittest.TestCase):
-    def test_is_prime(self):
-        # 质数
-        self.assertTrue(is_prime(2))
-        self.assertTrue(is_prime(3))
-        self.assertTrue(is_prime(13))
-        self.assertTrue(is_prime(97))
+def test_is_prime_true():
+    """测试质数的情况"""
+    assert is_prime(2) is True
+    assert is_prime(3) is True
+    assert is_prime(13) is True
+    assert is_prime(97) is True
 
-        # 合数
-        self.assertFalse(is_prime(4))
-        self.assertFalse(is_prime(12))
-        self.assertFalse(is_prime(99))
-        self.assertFalse(is_prime(100))
+def test_is_prime_false():
+    """测试合数的情况"""
+    assert is_prime(4) is False
+    assert is_prime(12) is False
+    assert is_prime(99) is False
+    assert is_prime(100) is False
 
-        # 边界情况
-        self.assertFalse(is_prime(0))
-        self.assertFalse(is_prime(1))
-        self.assertFalse(is_prime(-5))
-
-if __name__ == '__main__':
-    unittest.main() 
+def test_is_prime_edge_cases():
+    """测试边界情况"""
+    assert is_prime(0) is False
+    assert is_prime(1) is False
+    assert is_prime(-5) is False 

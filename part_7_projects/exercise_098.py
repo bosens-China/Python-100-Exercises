@@ -12,27 +12,15 @@ from typing import Tuple, List, Optional
 
 def fetch_and_parse(url: str) -> Optional[BeautifulSoup]:
     """获取指定 URL 的 HTML 内容并用 BeautifulSoup 解析。"""
-    try:
-        response = requests.get(url, timeout=10)
-        response.raise_for_status()
-        # 使用 response.text 获取解码后的文本内容
-        return BeautifulSoup(response.text, 'html.parser')
-    except requests.exceptions.RequestException as e:
-        print(f"获取 URL 时出错: {url}\n错误: {e}")
-        return None
+    # 在这里写下你的代码
+    # 提示: 使用 requests.get, response.raise_for_status, 和 BeautifulSoup(...)
+    raise NotImplementedError
 
 def extract_title_and_paragraphs(soup: BeautifulSoup) -> Tuple[str, List[str]]:
     """从 BeautifulSoup 对象中提取标题和所有段落文本。"""
-    if not soup:
-        return "无标题", []
-
-    # 提取标题
-    title = soup.title.string if soup.title else "无标题"
-    
-    # 提取所有段落
-    paragraphs = [p.get_text() for p in soup.find_all('p')]
-    
-    return title, paragraphs
+    # 在这里写下你的代码
+    # 提示: 使用 soup.title.string 和 soup.find_all('p')
+    raise NotImplementedError
 
 def main():
     """主函数入口"""

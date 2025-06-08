@@ -14,7 +14,7 @@ def count_character_frequency(s: str) -> Counter:
     :return: 一个 Counter 对象
     """
     # 在这里写下你的代码
-    return Counter(s)
+    raise NotImplementedError
 
 if __name__ == '__main__':
     test_string = "abracadabra"
