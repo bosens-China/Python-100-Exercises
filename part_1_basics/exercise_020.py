@@ -11,18 +11,13 @@
 
 def get_types_of_variables():
     """
-    创建不同类型的变量并返回它们的类型
-    :return: 一个包含各种变量类型的列表
+    请根据下面的注释，创建相应类型的变量，
+    并将它们的类型 (type) 依次添加到 `types` 列表中。
+    :return: 一个包含各种变量类型的列表，顺序应为：int, float, str, list, dict
     """
-    integer_var = 5
-    float_var = 3.14
-    string_var = "hello"
-    list_var = [1, 2, 3]
-    dict_var = {'a': 1}
-    tuple_var = (1, 2)
-    set_var = {1, 2}
-
-    # 在这里写下你的代码，获取以上变量的类型
+    # TODO: 在下方创建 'integer_var', 'float_var', 'string_var', 'list_var', 'dict_var' 五个变量，并赋予相应类型的值。
+    
+    # TODO: 将以上变量的类型 (type) 按顺序添加到下面的列表中
     types = []
 
     # 为了方便测试，我们将类型返回
@@ -39,6 +34,7 @@ if __name__ == '__main__':
     print(f"Type of (1, 2) is {type((1, 2))}")
     print(f"Type of {{1, 2}} is {type({1, 2})}")
 
+    # 当你在 get_types_of_variables 中完成代码后，
     # 调用函数并打印返回的类型列表
     variable_types = get_types_of_variables()
     print(f"\n函数返回的类型列表: {variable_types}") 
