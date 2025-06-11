@@ -17,4 +17,4 @@ def test_generate_multiplication_table():
     assert "5*7=35" in table
     
     # 检查换行符数量，应该有 9 行
-    assert table.strip().count('\\n') == 8 
+    assert table.strip().count('\n') == 8  # 修改这里，去掉一个反斜杠

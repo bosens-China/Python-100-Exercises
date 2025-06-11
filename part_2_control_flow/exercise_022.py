@@ -38,9 +38,3 @@ def guess_the_number_game():
 
 if __name__ == '__main__':
     guess_the_number_game()
-
-# 注意:
-# 这个练习涉及用户输入和随机数，非常不方便进行自动化单元测试。
-# 其核心是 `while` 循环和 `if/elif/else` 条件判断的结合运用。
-# 因此，这个练习没有对应的 test_exercise_022.py 文件。
-# 你可以直接运行此文件来玩这个游戏。 
