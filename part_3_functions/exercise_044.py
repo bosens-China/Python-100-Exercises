@@ -6,7 +6,7 @@
 - **期待:** 调用 `describe_pet(pet_name="Harry", animal_type="hamster")` 输出 `I have a hamster named Harry.`。
 """
 
-def describe_pet(animal_type, pet_name):
+def describe_pet():
     """
     根据动物类型和名字描述宠物。
     为了方便测试，函数将返回字符串而不是直接打印。
@@ -15,7 +15,7 @@ def describe_pet(animal_type, pet_name):
     :return: 描述宠物的字符串
     """
     # 在这里写下你的代码
-    return f"I have a {animal_type} named {pet_name}."
+    pass
 
 if __name__ == '__main__':
     # 使用关键字参数调用，顺序与定义时不同

@@ -6,17 +6,14 @@
 - **期待:** `sum_all(1, 2, 3, 4, 5)` 返回 `15`。
 """
 
-def sum_all(*args):
+def sum_all():
     """
     计算所有位置参数的总和。
     :param args: 一个包含所有位置参数的元组
     :return: 所有参数的总和
     """
     # 在这里写下你的代码
-    total = 0
-    for num in args:
-        total += num
-    return total
+    pass
 
 if __name__ == '__main__':
     print(sum_all(1, 2, 3, 4, 5))

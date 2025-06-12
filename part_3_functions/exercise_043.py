@@ -9,15 +9,14 @@
 """
 
 # 我们将重新定义这个函数，而不是修改之前的文件
-def greet_with_default(name="World"):
+def greet_with_default():
     """
     生成一个问候字符串，name 参数有默认值。
     :param name: 要问候的人的名字，默认为 "World"
     :return: 问候语字符串
     """
     # 在这里写下你的代码
-    # 这个函数体和 exercise_041 的很像
-    return f"Hello, {name}!"
+    pass
 
 if __name__ == '__main__':
     print(greet_with_default("Bob"))

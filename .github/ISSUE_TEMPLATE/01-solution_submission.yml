@@ -1,5 +1,5 @@
 name: "解题分享 (Solution Submission)"
-description: "分享解题思路。请在标题中直接填写练习编号，例如：[解题分享] 001"
+description: "分享解题思路。请在标题中直接填写练习编号，例如：[解题分享] 43"
 title: "[解题分享] "
 labels: ["solution", "community"]
 assignees:

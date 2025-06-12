@@ -6,7 +6,7 @@
 - **期待:** 调用 `greet("Alice")` 会输出 `Hello, Alice!`。
 """
 
-def greet(name):
+def greet():
     """
     生成一个问候字符串。
     为了方便测试，函数将返回字符串而不是直接打印。
