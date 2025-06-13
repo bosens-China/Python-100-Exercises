@@ -4,7 +4,6 @@ def test_my_decorator(capsys):
     """
     测试装饰器是否在函数执行前后打印了预期的消息。
     """
-    
     @my_decorator
     def say_hello():
         print("Hello!")
@@ -17,11 +16,7 @@ def test_my_decorator(capsys):
         "Hello!\n"
         "Something is happening after the function is called.\n"
     )
-    
-    # 因为函数未实现，调用会引发 NotImplementedError
-    # 这里我们只是展示测试的结构
-    # assert captured.out == expected_output
-    pass
+    assert captured.out == expected_output
 
 def test_my_decorator_with_return_value(capsys):
     """
@@ -33,14 +28,11 @@ def test_my_decorator_with_return_value(capsys):
 
     result = add(2, 3)
     
-    # 验证返回值
-    # assert result == 5
+    assert result == 5
     
-    # 验证打印输出
     captured = capsys.readouterr()
     expected_output = (
         "Something is happening before the function is called.\n"
         "Something is happening after the function is called.\n"
     )
-    # assert captured.out == expected_output
-    pass 
+    assert captured.out == expected_output

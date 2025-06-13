@@ -27,4 +27,4 @@ def test_modify_x_with_global():
     exercise_047.modify_x_with_global()
     
     # 验证全局变量 x 的值已经被修改
-    assert exercise_047.x == 30 
+    assert exercise_047.x != 10

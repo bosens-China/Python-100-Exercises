@@ -17,16 +17,15 @@ def operate_on_numbers(a, b, operation):
     # 在这里写下你的代码
     pass
 
-# --- 为了演示和测试，定义一些可以作为参数的函数 ---
 
 def add(x, y):
-    return x + y
+    pass
 
 def subtract(x, y):
-    return x - y
+    pass
 
 # 使用 lambda 定义一个乘法函数
-multiply = lambda x, y: x * y
+multiply = pass
 
 if __name__ == '__main__':
     result_add = operate_on_numbers(10, 5, add)
