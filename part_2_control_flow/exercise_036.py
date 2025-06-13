@@ -24,21 +24,7 @@ if __name__ == '__main__':
         op = input("请输入运算符 (+, -, *, /): ")
         n2 = float(input("请输入第二个数字: "))
         
-        # 这里是独立的交互逻辑
-        if op == '+':
-            result = n1 + n2
-        elif op == '-':
-            result = n1 - n2
-        elif op == '*':
-            result = n1 * n2
-        elif op == '/':
-            if n2 == 0:
-                result = "错误：除数不能为零！"
-            else:
-                result = n1 / n2
-        else:
-            result = "无效的运算符"
-            
+        result = simple_calculator(n1, op, n2)
         print(f"结果: {result}")
 
     except ValueError:

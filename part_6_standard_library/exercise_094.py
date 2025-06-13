@@ -6,15 +6,14 @@
 - **期待:** 提取出 `test@example.com`。
 """
 import re
-from typing import Optional
 
-def find_email_in_text(text: str) -> Optional[str]:
+def find_email_in_text(text):
     """
     在给定的文本中查找并返回第一个有效的电子邮件地址。
     如果没有找到，则返回 None。
     """
     # 在这里写下你的代码
-    raise NotImplementedError
+    pass
 
 if __name__ == '__main__':
     text1 = "My email is test@example.com, please contact me."

@@ -6,7 +6,7 @@
 - **期待:** 程序不会崩溃，而是输出 "转换失败，请输入一个有效的数字！"。
 """
 
-def convert_to_int(s: str) -> int | str:
+def convert_to_int(s):
     """
     尝试将一个字符串转换为整数。
     如果转换成功，返回该整数。
@@ -16,4 +16,15 @@ def convert_to_int(s: str) -> int | str:
     :return: 转换后的整数或错误消息。
     """
     # 在这里写下你的代码
-    raise NotImplementedError 
+    pass
+
+if __name__ == '__main__':
+    # 测试有效转换
+    valid_string = "123"
+    result1 = convert_to_int(valid_string)
+    print(f"转换 '{valid_string}': {result1}")
+
+    # 测试无效转换
+    invalid_string = "abc"
+    result2 = convert_to_int(invalid_string)
+    print(f"转换 '{invalid_string}': {result2}") 

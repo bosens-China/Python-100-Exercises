@@ -8,9 +8,8 @@
 import os
 import re
 from collections import Counter
-from typing import Dict
 
-def count_word_frequency(filename: str) -> Dict[str, int]:
+def count_word_frequency(filename):
     """
     读取文件，统计其中每个单词的出现频率。
     处理方式：
@@ -19,24 +18,8 @@ def count_word_frequency(filename: str) -> Dict[str, int]:
     :param filename: 要处理的文件的路径
     :return: 一个包含单词及其频率的字典。
     """
-    try:
-        with open(filename, 'r', encoding='utf-8') as f:
-            text = f.read()
-        
-        # 将所有内容转为小写
-        text = text.lower()
-        
-        # 使用正则表达式匹配所有单词（只包含字母）
-        words = re.findall(r'\b[a-z]+\b', text)
-        
-        # 使用 collections.Counter 快速统计频率
-        word_counts = Counter(words)
-        
-        return dict(word_counts)
-        
-    except FileNotFoundError:
-        print(f"Error: File '{filename}' not found.")
-        return {}
+    # 在这里写下你的代码
+    pass
 
 
 if __name__ == '__main__':

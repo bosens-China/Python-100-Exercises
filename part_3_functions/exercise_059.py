@@ -8,18 +8,15 @@
   - `is_palindrome(12321)` 返回 `True`。
   - `is_palindrome("hello")` 返回 `False`。
 """
-from typing import Union
 
-def is_palindrome(data: Union[str, int]) -> bool:
+def is_palindrome(data):
     """
     检查给定的字符串或数字是否是回文。
     :param data: 一个字符串或整数
     :return: 如果是回文则返回 True，否则返回 False
     """
     # 在这里写下你的代码
-    # 统一将输入转换为字符串进行处理
-    s = str(data)
-    return s == s[::-1]
+    pass
 
 if __name__ == '__main__':
     print(f"'madam' 是回文吗? {is_palindrome('madam')}")

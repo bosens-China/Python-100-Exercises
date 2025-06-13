@@ -11,41 +11,8 @@
 import math
 
 class Circle:
-    """一个 Circle 类，使用 @property 来控制对半径的访问。"""
-    def __init__(self, radius: float):
-        # 初始化时也通过 setter 来进行验证
-        self.radius = radius
-
-    @property
-    def radius(self) -> float:
-        """
-        这是 'radius' 属性的 getter 方法。
-        它允许我们像访问属性一样获取 _radius 的值 (e.g., c.radius)。
-        """
-        print("Getting radius...")
-        return self._radius
-
-    @radius.setter
-    def radius(self, value: float):
-        """
-        这是 'radius' 属性的 setter 方法。
-        它允许我们像给属性赋值一样设置 _radius 的值 (e.g., c.radius = 10)，
-        同时可以在赋值前进行验证。
-        """
-        print(f"Setting radius to {value}...")
-        if value < 0:
-            raise ValueError("Radius cannot be negative.")
-        # 私有变量的命名通常用一个下划线开头
-        self._radius = value
-
-    @property
-    def area(self) -> float:
-        """
-        一个只读的 property，用于计算面积。
-        它依赖于 radius 属性。
-        """
-        print("Calculating area...")
-        return math.pi * (self._radius ** 2)
+    # 在这里写下你的代码
+    pass
 
 if __name__ == '__main__':
     print("--- 创建一个 Circle 实例 ---")

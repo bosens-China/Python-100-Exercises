@@ -8,21 +8,21 @@
   - 路径拼接能正确处理不同操作系统的分隔符。
 """
 import os
-from typing import List
 
-def list_current_directory() -> List[str]:
+
+def list_current_directory():
     """
     列出当前工作目录下的所有文件和文件夹。
     """
     # 在这里写下你的代码
-    raise NotImplementedError
+    pass
 
-def join_path_components(part1: str, part2: str) -> str:
+def join_path_components(part1, part2):
     """
     安全地拼接两个路径部分。
     """
     # 在这里写下你的代码
-    raise NotImplementedError
+    pass
 
 if __name__ == '__main__':
     print("--- 列出当前目录内容 ---")

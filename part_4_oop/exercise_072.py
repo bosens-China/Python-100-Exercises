@@ -7,22 +7,8 @@
 """
 
 class Rectangle:
-    """一个代表矩形的类。"""
-    def __init__(self, width: float, height: float):
-        if width < 0 or height < 0:
-            raise ValueError("Width and height must be non-negative")
-        self.width = width
-        self.height = height
-
-    def area(self) -> float:
-        """计算矩形的面积。"""
-        # 在这里写下你的代码
-        return self.width * self.height
-
-    def perimeter(self) -> float:
-        """计算矩形的周长。"""
-        # 在这里写下你的代码
-        return 2 * (self.width + self.height)
+    # 在这里写下你的代码
+    pass
 
 if __name__ == '__main__':
     rect = Rectangle(10, 5)

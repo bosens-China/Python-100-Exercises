@@ -7,7 +7,6 @@
 """
 import requests
 import sys
-from typing import Dict, Optional
 
 # --- 配置 ---
 # TODO: 在这里替换成你自己的 OpenWeatherMap API Key
@@ -15,32 +14,21 @@ from typing import Dict, Optional
 API_KEY = "YOUR_API_KEY_HERE" 
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 
-def get_weather(city_name: str) -> dict | None:
+def get_weather(city_name):
     """
     获取指定城市的天气信息。
     :param city_name: 城市名称 (例如, "London", "Tokyo")
     :return: 包含天气数据的字典，或者在出错时返回 None
     """
     # 在这里写下你的代码
-    raise NotImplementedError
+    pass
 
-def display_weather(weather_data: Dict):
+def display_weather(weather_data):
     """
     格式化并打印天气信息。
     """
-    if not weather_data:
-        return
-        
-    city = weather_data.get('name')
-    # get('weather') 返回一个列表，我们取第一个元素
-    weather_desc = weather_data['weather'][0].get('description')
-    # get('main') 返回一个字典
-    temp = weather_data['main'].get('temp')
-    
-    print(f"\n--- {city} 的天气 ---")
-    print(f"天气: {weather_desc}")
-    print(f"温度: {temp}°C")
-    print("-" * (len(city) + 12))
+    # 在这里写下你的代码
+    pass
 
 def main():
     """主函数入口"""

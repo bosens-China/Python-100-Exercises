@@ -7,28 +7,13 @@
 """
 import os
 
-def read_with_with(filename: str) -> str:
-    """
-    使用 with 语句读取文件内容。
-    """
-    try:
-        # 在这里写下你的代码
-        with open(filename, 'r', encoding='utf-8') as f:
-            return f.read()
-    except FileNotFoundError:
-        return f"Error: File '{filename}' not found."
+def read_with_with(filename):
+    # 在这里写下你的代码
+    pass
 
-def write_with_with(filename: str, content: str):
-    """
-    使用 with 语句写入文件内容。
-    """
-    try:
-        # 在这里写下你的代码
-        with open(filename, 'w', encoding='utf-8') as f:
-            f.write(content)
-        return True
-    except IOError:
-        return False
+def write_with_with(filename, content):
+    # 在这里写下你的代码
+    pass
 
 if __name__ == '__main__':
     test_file = "temp_file_for_with.txt"

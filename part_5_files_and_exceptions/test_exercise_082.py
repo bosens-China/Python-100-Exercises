@@ -1,4 +1,4 @@
-from part_5_files_exceptions.exercise_082 import divide
+from part_5_files_and_exceptions.exercise_082 import divide
 
 def test_divide_success():
     """

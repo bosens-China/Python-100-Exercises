@@ -23,25 +23,30 @@ def show_usage():
     print(f"  python {sys.argv[0]} delete <行号>    - 删除指定行号的笔记")
     print("-" * 30)
 
-def load_notes(filename: str) -> list[str]:
+def load_notes(filename):
     """从指定文件中加载所有笔记。"""
-    raise NotImplementedError
+    # 在这里写下你的代码
+    pass
 
-def save_notes(notes: list[str], filename: str):
+def save_notes(notes, filename):
     """将笔记列表保存到指定文件。"""
-    raise NotImplementedError
+    # 在这里写下你的代码
+    pass
 
-def list_notes(filename: str):
+def list_notes(filename):
     """列出指定文件中的所有笔记。"""
-    raise NotImplementedError
+    # 在这里写下你的代码
+    pass
 
-def add_note(note_content: str, filename: str):
+def add_note(note_content, filename):
     """向指定文件添加一条新笔记。"""
-    raise NotImplementedError
+    # 在这里写下你的代码
+    pass
 
-def delete_note(note_number_str: str, filename: str):
+def delete_note(note_number_str, filename):
     """从指定文件中删除指定编号的笔记。"""
-    raise NotImplementedError
+    # 在这里写下你的代码
+    pass
 
 def main():
     """程序主入口，处理命令行参数。"""
@@ -75,6 +80,5 @@ def main():
         show_usage()
 
 if __name__ == '__main__':
-    # 为了演示，这里的 main 函数不做任何事
-    # 学生需要填充上面的函数才能让它工作
-    print("请实现 exercise_096.py 中的函数来运行此记事本。") 
+    # 调用主函数来处理命令行参数
+    main() 

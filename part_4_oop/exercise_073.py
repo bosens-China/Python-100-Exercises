@@ -10,36 +10,8 @@
 """
 
 class Account:
-    """一个代表银行账户的类。"""
-    def __init__(self, owner: str, balance: float = 0):
-        self.owner = owner
-        if balance < 0:
-            raise ValueError("Initial balance cannot be negative.")
-        self.balance = balance
-
-    def deposit(self, amount: float):
-        """向账户存款。"""
-        if amount <= 0:
-            print("Deposit amount must be positive.")
-            return
-        # 在这里写下你的代码
-        self.balance += amount
-        print(f"Deposited {amount}. New balance is {self.balance}.")
-
-    def withdraw(self, amount: float):
-        """从账户取款。"""
-        if amount <= 0:
-            print("Withdrawal amount must be positive.")
-            return
-        # 在这里写下你的代码
-        if amount > self.balance:
-            print("Withdrawal failed: Insufficient funds.")
-        else:
-            self.balance -= amount
-            print(f"Withdrew {amount}. New balance is {self.balance}.")
-            
-    def __str__(self):
-        return f"Account owner: {self.owner}, Balance: {self.balance}"
+    # 在这里写下你的代码
+    pass
 
 
 if __name__ == '__main__':

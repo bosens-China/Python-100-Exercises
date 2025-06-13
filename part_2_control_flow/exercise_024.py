@@ -12,8 +12,7 @@ def sum_1_to_100():
     :return: 整数 5050
     """
     # 在这里写下你的代码
-    total = 0
-    return total
+    pass
 
 if __name__ == '__main__':
     result = sum_1_to_100()

@@ -12,8 +12,7 @@ def generate_squares():
     :return: 包含平方数的列表
     """
     # 在这里写下你的代码
-    squares = []
-    return squares
+    pass
 
 if __name__ == '__main__':
     square_list = generate_squares()

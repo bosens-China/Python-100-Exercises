@@ -13,11 +13,11 @@ def filter_even_numbers(numbers):
     :return: 一个只包含原列表中偶数的新列表
     """
     # 在这里写下你的代码
-    even_numbers = filter(lambda x: x % 2 == 0, numbers)
-    return list(even_numbers)
+    pass
 
 if __name__ == '__main__':
     original_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    # 调用 filter_even_numbers 并打印结果
     evens = filter_even_numbers(original_numbers)
     print(f"原列表: {original_numbers}")
     print(f"筛选出的偶数: {evens}") 

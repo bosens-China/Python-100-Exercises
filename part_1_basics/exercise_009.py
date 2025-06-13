@@ -16,9 +16,7 @@ def calculate_rectangle_properties(length, width):
     :return: 一个元组 (周长, 面积)
     """
     # 在这里写下你的代码
-    perimeter = None
-    area = None
-    return perimeter, area
+    pass
 
 if __name__ == '__main__':
     l, w = 10, 5

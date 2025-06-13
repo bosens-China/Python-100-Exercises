@@ -9,7 +9,4 @@ def test_calculate_circle_area():
     # 测试半径为 1 的情况
     assert calculate_circle_area(1) == pytest.approx(math.pi)
     # 测试半径为 0 的情况
-    assert calculate_circle_area(0) == pytest.approx(0)
-
-if __name__ == '__main__':
-    pytest.main() 
+    assert calculate_circle_area(0) == pytest.approx(0) 

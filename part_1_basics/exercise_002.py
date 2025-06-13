@@ -8,8 +8,7 @@
 
 def swap_variables(a, b):
     # 在这里写下你的代码
-    # 函数应该返回交换后的 (a, b) 元组
-    return a, b
+    pass
 
 if __name__ == '__main__':
     a, b = 5, 10

@@ -22,4 +22,7 @@ def test_division_by_zero():
 
 def test_invalid_operator():
     """测试无效运算符"""
-    assert simple_calculator(10, '%', 5) is None # 或者返回特定的错误信息 
+    # 根据函数的实现，这里可能返回一个错误消息字符串
+    expected_message = "无效的运算符"
+    assert simple_calculator(10, '%', 5) == expected_message
+    assert simple_calculator(10, 'a', 5) == expected_message 

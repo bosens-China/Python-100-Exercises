@@ -6,16 +6,14 @@
 - **期待:** 调用 `set_age(-5)` 会使程序因 `ValueError` 而停止，并显示你提供的错误信息。
 """
 
-def set_age(age: int):
+def set_age(age):
     """
     设置年龄，如果年龄为负则抛出异常。
     :param age: 要设置的年龄
     :raises ValueError: 如果年龄小于 0
     """
     # 在这里写下你的代码
-    if age < 0:
-        raise ValueError("年龄不能为负数")
-    print(f"年龄设置为: {age}")
+    pass
 
 
 if __name__ == '__main__':

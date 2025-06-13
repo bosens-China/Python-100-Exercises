@@ -7,26 +7,15 @@
 """
 import os
 
-def copy_file(source_filename: str, destination_filename: str) -> bool:
+def copy_file(source_filename, destination_filename):
     """
     将源文件的内容复制到目标文件。
     :param source_filename: 源文件的路径
     :param destination_filename: 目标文件的路径
     :return: 如果成功返回 True，否则返回 False
     """
-    try:
-        # 在这里写下你的代码
-        with open(source_filename, 'r', encoding='utf-8') as source_file:
-            content = source_file.read()
-        with open(destination_filename, 'w', encoding='utf-8') as dest_file:
-            dest_file.write(content)
-        return True
-    except FileNotFoundError:
-        print(f"Error: Source file '{source_filename}' not found.")
-        return False
-    except IOError as e:
-        print(f"An I/O error occurred: {e}")
-        return False
+    # 在这里写下你的代码
+    pass
 
 if __name__ == '__main__':
     source_file = "source.txt"

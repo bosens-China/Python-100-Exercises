@@ -6,7 +6,7 @@
 - **期待:** `result = add(5, 3)` 后，`print(result)` 输出 `8`。
 """
 
-def add():
+def add(a, b):
     """
     返回两个数字的和。
     :param a: 第一个数字

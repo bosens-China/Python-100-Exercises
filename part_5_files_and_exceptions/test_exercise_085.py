@@ -1,4 +1,5 @@
 from part_5_files_and_exceptions.exercise_085 import count_word_frequency
+import pytest
 
 def test_simple_case(tmp_path):
     """测试一个简单的句子。"""
@@ -19,12 +20,17 @@ def test_case_insensitivity(tmp_path):
     assert count_word_frequency(p) == expected
 
 def test_punctuation_handling(tmp_path):
-    """测试函数是否能正确处理标点符号。"""
+    """
+    测试函数是否能正确处理标点符号。
+    注意：基础的实现可能只是简单地移除标点，这对于 "word's" 这样的词可能不理想，
+    但对于本练习来说，我们将测试简单的标点移除。
+    """
     p = tmp_path / "test.txt"
-    # content 和 expected 已经调整以匹配函数的实际行为
-    content = "word, word! another word. final word?"
+    content = "word, word! another-word. final word?"
     p.write_text(content, encoding='utf-8')
-    expected = {'word': 4, 'another': 1, 'final': 1}
+    # 根据提示中的replace方法，预期结果是移除非字母字符后进行计数
+    # 'another-word' 在移除非字母后会变成 'anotherword'
+    expected = {'word': 4, 'anotherword': 1, 'final': 1}
     
     assert count_word_frequency(p) == expected
 

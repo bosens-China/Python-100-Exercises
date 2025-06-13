@@ -19,10 +19,7 @@ def generate_multiplication_table():
     :return: 包含完整乘法表的字符串。
     """
     # 在这里写下你的代码
-    # 使用嵌套循环构建字符串
-    # 注意处理格式，比如使用 `\t` (制表符) 和 `\n` (换行符)
-    table_string = ""
-    return table_string
+    pass
 
 if __name__ == '__main__':
     table = generate_multiplication_table()

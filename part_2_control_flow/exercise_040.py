@@ -13,8 +13,7 @@ def reverse_string(s):
     :return: 反转后的字符串
     """
     # 在这里写下你的代码
-    reversed_s = ""
-    return reversed_s
+    pass
 
 if __name__ == '__main__':
     text = "python"

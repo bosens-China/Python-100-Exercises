@@ -15,7 +15,4 @@ def test_format_of_current_time():
         datetime.datetime.strptime(formatted_time_str, "%Y-%m-%d %H:%M:%S")
     except ValueError:
         # 如果解析失败，说明格式不正确，测试失败
-        pytest.fail(f"返回的字符串 '{formatted_time_str}' 不符合 '%Y-%m-%d %H:%M:%S' 格式")
-
-if __name__ == '__main__':
-    pytest.main() 
+        pytest.fail(f"返回的字符串 '{formatted_time_str}' 不符合 '%Y-%m-%d %H:%M:%S' 格式") 

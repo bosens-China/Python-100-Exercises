@@ -8,10 +8,4 @@ def my_dog():
 
 def test_bark_return_value(my_dog):
     """测试 bark 方法的返回值。"""
-    assert my_dog.bark() == "Woof! Woof!"
-
-def test_bark_print_output(my_dog, capsys):
-    """测试 bark 方法是否在控制台打印了正确的内容。"""
-    my_dog.bark()
-    captured = capsys.readouterr()
-    assert captured.out.strip() == "Woof! Woof!" 
+    assert my_dog.bark() == "Woof! Woof!" 

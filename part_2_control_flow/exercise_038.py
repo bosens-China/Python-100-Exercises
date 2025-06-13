@@ -13,8 +13,7 @@ def deduplicate_list(items):
     :return: 一个移除了重复元素的新列表
     """
     # 在这里写下你的代码
-    unique_items = []
-    return unique_items
+    pass
 
 if __name__ == '__main__':
     my_list = [1, 2, 2, 3, 4, 3, 5, 1]

@@ -7,20 +7,8 @@
 """
 
 class Dog:
-    """
-    一个代表狗的类，实现了 __str__ 方法。
-    """
-    def __init__(self, name: str, age: int):
-        self.name = name
-        self.age = age
-        
-    def __str__(self) -> str:
-        """
-        返回一个非正式的、适合给用户看的字符串表示。
-        当调用 print(instance) 或 str(instance) 时被触发。
-        """
-        # 在这里写下你的代码
-        return f"{self.name} is a {self.age}-year-old dog."
+    # 在这里写下你的代码
+    pass
 
 if __name__ == '__main__':
     my_dog = Dog("Fido", 5)

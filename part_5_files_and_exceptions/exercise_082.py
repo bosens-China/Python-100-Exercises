@@ -8,9 +8,8 @@
   - `divide(10, 0)` 打印 "错误：除数不能为零！"。
   - `divide(10, "a")` 打印 "错误：输入必须是数字！"。
 """
-from typing import Union
 
-def divide(a, b) -> Union[float, str]:
+def divide(a, b):
     """
     计算 a / b 的商。
     - 如果成功，返回浮点数结果。
@@ -22,4 +21,17 @@ def divide(a, b) -> Union[float, str]:
     :return: 计算结果或错误消息。
     """
     # 在这里写下你的代码
-    raise NotImplementedError 
+    pass
+
+if __name__ == '__main__':
+    # 1. 成功情况
+    result1 = divide(10, 2)
+    print(f"divide(10, 2) = {result1}")
+
+    # 2. 除数为零
+    result2 = divide(10, 0)
+    print(f"divide(10, 0) = {result2}")
+
+    # 3. 类型错误
+    result3 = divide(10, "a")
+    print(f"divide(10, 'a') = {result3}") 

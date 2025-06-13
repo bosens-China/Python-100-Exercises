@@ -13,8 +13,7 @@ def create_dict_from_list(keys):
     :return: 一个字典，键是列表中的字符串，值是其长度
     """
     # 在这里写下你的代码
-    result_dict = {}
-    return result_dict
+    pass
 
 if __name__ == '__main__':
     key_list = ["name", "age", "city"]

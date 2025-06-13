@@ -13,7 +13,6 @@ def find_max(numbers):
     :return: 列表中的最大值。如果列表为空，可以返回 None。
     """
     # 在这里写下你的代码
-    # 注意处理空列表的情况
     pass
 
 if __name__ == '__main__':

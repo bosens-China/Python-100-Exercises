@@ -19,9 +19,8 @@ def generate_triangle(height):
     :param height: 三角形的高度
     :return: 代表三角形的字符串
     """
-    triangle_str = ""
     # 在这里写下你的代码
-    return triangle_str
+    pass
 
 if __name__ == '__main__':
     h = 5

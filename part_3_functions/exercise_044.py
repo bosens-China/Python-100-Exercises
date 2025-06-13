@@ -6,7 +6,7 @@
 - **期待:** 调用 `describe_pet(pet_name="Harry", animal_type="hamster")` 输出 `I have a hamster named Harry.`。
 """
 
-def describe_pet():
+def describe_pet(animal_type, pet_name):
     """
     根据动物类型和名字描述宠物。
     为了方便测试，函数将返回字符串而不是直接打印。

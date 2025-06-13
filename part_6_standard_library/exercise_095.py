@@ -6,9 +6,8 @@
 - **期待:** 输出 `200`（表示请求成功）。
 """
 import requests
-from typing import Optional
 
-def get_github_api_status_code() -> int | None:
+def get_github_api_status_code():
     """
     使用 requests 库向 GitHub API (https://api.github.com) 发起 GET 请求。
     如果请求成功（没有抛出异常），则返回响应的状态码。
@@ -16,7 +15,7 @@ def get_github_api_status_code() -> int | None:
     则捕获异常并返回 None。
     """
     # 在这里写下你的代码
-    raise NotImplementedError
+    pass
 
 if __name__ == '__main__':
     print("正在向 https://api.github.com 发送请求...")

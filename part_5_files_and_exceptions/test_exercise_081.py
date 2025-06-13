@@ -1,4 +1,4 @@
-from part_5_files_exceptions.exercise_081 import convert_to_int
+from part_5_files_and_exceptions.exercise_081 import convert_to_int
 
 def test_convert_to_int_with_valid_string():
     """

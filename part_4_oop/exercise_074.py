@@ -8,32 +8,21 @@
 
 class Flyable:
     """一个代表能飞的Mixin类。"""
-    def fly(self) -> str:
-        message = "I am flying!"
-        print(message)
-        return message
+    # 在这里写下你的代码
+    pass
 
 class Swimmable:
     """一个代表能游泳的Mixin类。"""
-    def swim(self) -> str:
-        message = "I am swimming!"
-        print(message)
-        return message
+    # 在这里写下你的代码
+    pass
 
-# 在这里写下你的代码
-class Duck(Flyable, Swimmable):
-    """
-    一个鸭子类，通过多重继承获得了飞行和游泳的能力。
-    """
-    def quack(self) -> str:
-        message = "Quack! Quack!"
-        print(message)
-        return message
 
 if __name__ == '__main__':
+    # 当你定义好 Duck 类后，下面的代码应该可以正常运行
     donald = Duck()
     
     print("Donald the Duck's abilities:")
     donald.fly()
     donald.swim()
-    donald.quack() 
+    # 如果你添加了 quack 方法，也可以在这里调用
+    # donald.quack() 

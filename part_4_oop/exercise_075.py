@@ -7,29 +7,8 @@
 """
 
 class Vector:
-    """一个代表二维向量的类，支持向量加法。"""
-    def __init__(self, x: float, y: float):
-        self.x = x
-        self.y = y
-
-    def __add__(self, other):
-        """重载 + 运算符以实现向量加法。"""
-        # 在这里写下你的代码
-        if not isinstance(other, Vector):
-            # 为了简单起见，我们只支持 Vector + Vector
-            # 更完善的实现可能会处理与其他类型的相加
-            return NotImplemented
-        return Vector(self.x + other.x, self.y + other.y)
-
-    def __repr__(self) -> str:
-        """提供一个明确的字符串表示。"""
-        return f"Vector({self.x}, {self.y})"
-        
-    def __eq__(self, other) -> bool:
-        """重载 == 运算符以比较两个向量是否相等，这对于测试很有用。"""
-        if not isinstance(other, Vector):
-            return NotImplemented
-        return self.x == other.x and self.y == other.y
+    # 在这里写下你的代码
+    pass
 
 if __name__ == '__main__':
     v1 = Vector(2, 3)

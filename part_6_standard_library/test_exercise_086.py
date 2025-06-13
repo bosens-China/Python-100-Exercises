@@ -36,9 +36,4 @@ def test_choose_random_item_reproducibility():
 def test_choose_random_item_from_single_list():
     """测试从只包含一个元素的列表中选择。"""
     items = ["the_only_choice"]
-    assert choose_random_item(items) == "the_only_choice"
-
-if __name__ == '__main__':
-    test_generate_random_integer_list()
-    test_choose_random_item_reproducibility()
-    test_choose_random_item_from_single_list() 
+    assert choose_random_item(items) == "the_only_choice" 

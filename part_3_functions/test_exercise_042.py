@@ -6,7 +6,4 @@ def test_add():
     assert add(5, 3) == 8
     assert add(-5, 3) == -2
     assert add(0, 0) == 0
-    assert add(1.5, 2.5) == pytest.approx(4.0)
-
-if __name__ == '__main__':
-    pytest.main() 
+    assert add(1.5, 2.5) == pytest.approx(4.0) 

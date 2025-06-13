@@ -17,11 +17,17 @@
   # Something is happening after the function is called.
   ```
 """
-from typing import Callable, Any
 
-def my_decorator(func: Callable) -> Callable:
+def my_decorator(func):
     """
     一个简单的装饰器，在函数执行前后打印消息。
     """
     # 在这里写下你的代码
-    raise NotImplementedError 
+    pass
+
+if __name__ == '__main__':
+    @my_decorator
+    def say_hello():
+        print("Hello!")
+    
+    say_hello()

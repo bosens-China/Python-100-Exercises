@@ -7,13 +7,13 @@
 """
 import datetime
 
-def get_formatted_current_time() -> str:
+def get_formatted_current_time():
     """
     获取当前的日期和时间，并将其格式化。
     :return: 格式为 "YYYY-MM-DD HH:MM:SS" 的字符串。
     """
     # 在这里写下你的代码
-    raise NotImplementedError
+    pass
 
 if __name__ == '__main__':
     formatted_time = get_formatted_current_time()

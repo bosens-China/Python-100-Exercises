@@ -13,11 +13,11 @@ def square_list_with_map(numbers):
     :return: 一个包含原列表中每个数字平方的新列表
     """
     # 在这里写下你的代码
-    squared_numbers = map(lambda x: x * x, numbers)
-    return list(squared_numbers)
+    pass
 
 if __name__ == '__main__':
     original_numbers = [1, 2, 3, 4, 5]
+    # 调用 square_list_with_map 并打印结果
     squared = square_list_with_map(original_numbers)
     print(f"原列表: {original_numbers}")
     print(f"平方后的列表: {squared}") 

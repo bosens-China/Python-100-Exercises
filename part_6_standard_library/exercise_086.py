@@ -6,21 +6,21 @@
 - **期待:** 每次运行都会得到不同的随机列表和水果。
 """
 import random
-from typing import List, Any
 
-def generate_random_integer_list(n: int, min_val: int, max_val: int) -> List[int]:
+def generate_random_integer_list(n, min_val, max_val):
     """
     生成一个包含 n 个在 [min_val, max_val] 范围内的随机整数的列表。
     """
     # 在这里写下你的代码
-    raise NotImplementedError
+    pass
 
-def choose_random_item(items: List[Any]) -> Any:
+def choose_random_item(items):
     """
     从列表中随机选择一个元素。
     """
     # 在这里写下你的代码
-    raise NotImplementedError
+    # 提示: 使用 random.choice(items)
+    pass
 
 if __name__ == '__main__':
     # 生成随机整数列表

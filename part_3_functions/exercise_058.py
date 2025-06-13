@@ -6,7 +6,7 @@
 - **期待:** 函数定义变为 `def add(a: int, b: int) -> int:`。这不会改变程序的行为，但能提高代码可读性和方便静态检查工具。
 """
 
-def add(a: int, b: int) -> int:
+def add(a, b):
     """
     计算两个整数的和。
     这个函数的目标是展示如何正确使用类型提示。
@@ -16,4 +16,8 @@ def add(a: int, b: int) -> int:
     :return: 两个整数的和。
     """
     # 在这里写下你的代码
-    raise NotImplementedError 
+    pass
+
+if __name__ == '__main__':
+    result = add(5, 3)
+    print(f"调用 add(5, 3) 的结果是: {result}") 

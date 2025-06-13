@@ -13,8 +13,7 @@ def modify_list(fruits):
     :return: 修改后的列表
     """
     # 在这里写下你的代码
-    # 注意: 列表是可变对象，此函数可以直接修改传入的列表
-    return fruits
+    pass
 
 if __name__ == '__main__':
     my_fruits = ["apple", "banana", "cherry"]

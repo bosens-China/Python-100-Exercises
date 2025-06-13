@@ -14,9 +14,8 @@ def loop_control_break(numbers):
     :param numbers: 数字列表
     :return: 一个包含小于5的数字的列表
     """
-    result = []
     # 在这里写下你的代码
-    return result
+    pass
 
 def loop_control_continue(numbers):
     """
@@ -24,9 +23,8 @@ def loop_control_continue(numbers):
     :param numbers: 数字列表
     :return: 一个包含所有奇数的列表
     """
-    result = []
     # 在这里写下你的代码
-    return result
+    pass
 
 
 if __name__ == '__main__':

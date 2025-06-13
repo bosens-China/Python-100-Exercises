@@ -13,8 +13,7 @@ def generate_fibonacci(n):
     :return: 一个包含斐波那契数列的列表
     """
     # 在这里写下你的代码
-    fib_list = []
-    return fib_list
+    pass
 
 if __name__ == '__main__':
     count = 20

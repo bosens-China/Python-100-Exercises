@@ -18,7 +18,4 @@ def test_item_not_found(sample_list):
 
 def test_empty_list():
     """测试空列表的情况"""
-    assert search_in_list([], 5) == "没找到"
-
-if __name__ == '__main__':
-    pytest.main() 
+    assert search_in_list([], 5) == "没找到" 

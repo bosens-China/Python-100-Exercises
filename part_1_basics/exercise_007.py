@@ -16,10 +16,7 @@ def format_string(s):
     :return: 一个元组，包含转换后的全大写、全小写和移除两端空白后的字符串
     """
     # 在这里写下你的代码
-    upper_case = None
-    lower_case = None
-    stripped = None
-    return upper_case, lower_case, stripped
+    pass
 
 if __name__ == '__main__':
     original_string = "  pyThon ProGramming  "

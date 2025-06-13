@@ -7,7 +7,7 @@
 """
 import random
 
-def check_guess(secret_number: int, guess: int) -> str:
+def check_guess(secret_number, guess):
     """
     检查用户的猜测并返回结果。
     这是一个"纯函数"，易于测试。
@@ -17,7 +17,7 @@ def check_guess(secret_number: int, guess: int) -> str:
     :return: "太大了！", "太小了！", or "恭喜你，猜对了！"
     """
     # 在这里写下你的代码
-    raise NotImplementedError
+    pass
 
 def guess_the_number_game():
     """

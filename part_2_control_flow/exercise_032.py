@@ -16,8 +16,7 @@ def search_in_list(numbers, target):
     :return: 字符串 "找到了" 或 "没找到"
     """
     # 在这里写下你的代码
-    # 使用 for-else 结构
-    return ""
+    pass
 
 if __name__ == '__main__':
     my_list = [1, 2, 3, 4]

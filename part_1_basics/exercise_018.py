@@ -13,8 +13,7 @@ def modify_student_info(student):
     :return: 修改后的字典
     """
     # 在这里写下你的代码
-    # 注意: 字典是可变对象，此函数可以直接修改传入的字典
-    return student
+    pass
 
 if __name__ == '__main__':
     student_info = {'name': 'Alice', 'age': 20, 'score': 90}

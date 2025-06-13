@@ -28,12 +28,9 @@ if __name__ == '__main__':
     username_input = input("用户名: ")
     password_input = input("密码: ")
 
-    # 调用验证逻辑
-    # 注意：这里的实现与测试函数是独立的
-    if username_input == CORRECT_USERNAME and password_input == CORRECT_PASSWORD:
-        print("登录成功！")
-    else:
-        print("用户名或密码错误！")
+    # 调用验证函数并打印结果
+    message = simple_login(CORRECT_USERNAME, CORRECT_PASSWORD, username_input, password_input)
+    print(message)
 
 # 注意:
 # 为了方便测试，我们将核心判断逻辑放在 simple_login 函数中。

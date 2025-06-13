@@ -9,109 +9,17 @@
 import json
 import sys
 import os
-from typing import List, Dict, Optional
 
 # --- 定义数据文件路径 ---
 CONTACTS_FILE = 'contacts.json'
 
 class Contact:
     """表示单个联系人的类。"""
-    def __init__(self, name: str, phone: str, email: Optional[str] = None):
-        self.name = name
-        self.phone = phone
-        self.email = email
-
-    def to_dict(self) -> Dict[str, str]:
-        """将联系人对象转换为字典。"""
-        data = {'name': self.name, 'phone': self.phone}
-        if self.email:
-            data['email'] = self.email
-        return data
-
-    def __str__(self) -> str:
-        """返回联系人的字符串表示。"""
-        email_str = f", Email: {self.email}" if self.email else ""
-        return f"姓名: {self.name}, 电话: {self.phone}{email_str}"
+    pass
 
 class ContactManager:
     """管理所有联系人逻辑的类。"""
-    def __init__(self, filepath: str):
-        self.filepath = filepath
-        self.contacts = self._load_contacts()
-
-    def _load_contacts(self) -> List[Contact]:
-        """从 JSON 文件加载联系人。"""
-        if not os.path.exists(self.filepath):
-            return []
-        try:
-            with open(self.filepath, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                return [Contact(**c) for c in data]
-        except (json.JSONDecodeError, IOError):
-            return []
-
-    def _save_contacts(self):
-        """将当前联系人列表保存到 JSON 文件。"""
-        with open(self.filepath, 'w', encoding='utf-8') as f:
-            json.dump([c.to_dict() for c in self.contacts], f, indent=4, ensure_ascii=False)
-
-    def add_contact(self, name: str, phone: str, email: Optional[str] = None):
-        """添加一个新联系人。"""
-        if any(c.name == name for c in self.contacts):
-            print(f"错误: 姓名为 '{name}' 的联系人已存在。")
-            return
-        contact = Contact(name, phone, email)
-        self.contacts.append(contact)
-        self._save_contacts()
-        print(f"成功添加联系人: {name}")
-
-    def list_contacts(self):
-        """列出所有联系人。"""
-        if not self.contacts:
-            print("联系人列表为空。")
-            return
-        print("--- 所有联系人 ---")
-        for i, contact in enumerate(self.contacts, 1):
-            print(f"{i}. {contact}")
-        print("--------------------")
-
-    def find_contact(self, name: str) -> Optional[Contact]:
-        """按姓名查找联系人。"""
-        for contact in self.contacts:
-            if contact.name == name:
-                return contact
-        return None
-
-    def delete_contact(self, name: str):
-        """按姓名删除联系人。"""
-        contact_to_delete = self.find_contact(name)
-        if contact_to_delete:
-            self.contacts.remove(contact_to_delete)
-            self._save_contacts()
-            print(f"成功删除联系人: {name}")
-        else:
-            print(f"错误: 未找到姓名为 '{name}' 的联系人。")
-    
-    def update_contact(self, name: str, new_phone: Optional[str] = None, new_email: Optional[str] = None):
-        """更新联系人信息。"""
-        contact_to_update = self.find_contact(name)
-        if not contact_to_update:
-            print(f"错误: 未找到姓名为 '{name}' 的联系人。")
-            return
-        
-        updated = False
-        if new_phone:
-            contact_to_update.phone = new_phone
-            updated = True
-        if new_email:
-            contact_to_update.email = new_email
-            updated = True
-            
-        if updated:
-            self._save_contacts()
-            print(f"成功更新联系人: {name}")
-        else:
-            print("未提供任何要更新的信息。")
+    pass
 
 
 def print_usage():

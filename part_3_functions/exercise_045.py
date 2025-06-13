@@ -6,7 +6,7 @@
 - **期待:** `sum_all(1, 2, 3, 4, 5)` 返回 `15`。
 """
 
-def sum_all():
+def sum_all(*args):
     """
     计算所有位置参数的总和。
     :param args: 一个包含所有位置参数的元组

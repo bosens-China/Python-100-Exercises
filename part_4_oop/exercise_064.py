@@ -9,26 +9,12 @@
 """
 
 class Car:
-    """一个代表汽车的基类。"""
-    def __init__(self, brand: str, model: str):
-        self.brand = brand
-        self.model = model
-    
-    def fuel_type(self) -> str:
-        """返回汽车的燃料类型。"""
-        # 在这里写下你的代码
-        return "Diesel/Petrol"
+    # 在这里写下你的代码
+    pass
 
 class ElectricCar(Car):
-    """一个代表电动汽车的子类。"""
-    def __init__(self, brand: str, model: str, battery_size: str):
-        Car.__init__(self, brand, model)
-        self.battery_size = battery_size
-
-    def fuel_type(self) -> str:
-        """重写父类的方法，返回电动汽车的燃料类型。"""
-        # 在这里写下你的代码
-        return "Electric"
+    # 在这里写下你的代码
+    pass
 
 if __name__ == '__main__':
     my_car = Car("Toyota", "Camry")

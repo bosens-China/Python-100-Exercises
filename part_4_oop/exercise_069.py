@@ -10,30 +10,8 @@
 """
 
 class Calculator:
-    """一个用于演示不同类型方法的计算器类。"""
-    
-    def __init__(self, owner: str):
-        # 实例方法需要一个实例来调用
-        self.owner = owner
-
-    def add(self, a: int, b: int) -> int:
-        """实例方法：需要一个类的实例才能调用。它可以访问实例属性。"""
-        print(f"{self.owner}'s calculator is adding.")
-        return a + b
-    
-    @classmethod
-    def info(cls):
-        """类方法：通过类本身调用，第一个参数是类（约定为 cls）。"""
-        # 为了方便测试，返回字符串
-        message = f"This is a {cls.__name__} class."
-        print(message)
-        return message
-
-    @staticmethod
-    def multiply(a: int, b: int) -> int:
-        """静态方法：不需要类或实例作为第一个参数。它本质上是放在类命名空间下的一个普通函数。"""
-        print("Multiplying...")
-        return a * b
+    # 在这里写下你的代码
+    pass
 
 if __name__ == '__main__':
     # 调用实例方法

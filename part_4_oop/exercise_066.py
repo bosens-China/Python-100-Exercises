@@ -16,9 +16,31 @@ class Cat:
     类变量 `species` 对于所有 Cat 实例都是共享的。
     实例变量 `name` 是每个实例独有的。
     """
-    species = "Felis catus"
+    # 在这里写下你的代码
+    pass
 
-    def __init__(self, name):
-        self.name = name
+if __name__ == '__main__':
+    # 创建两个 Cat 实例
+    cat1 = Cat("Whiskers")
+    cat2 = Cat("Tom")
 
-    raise NotImplementedError
+    # 验证实例变量
+    print(f"第一只猫的名字是: {cat1.name}")
+    print(f"第二只猫的名字是: {cat2.name}")
+    assert cat1.name == "Whiskers"
+    assert cat2.name == "Tom"
+
+    # 验证类变量
+    # 类变量可以通过类直接访问，也可以通过实例访问
+    print(f"通过类访问物种: {Cat.species}")
+    print(f"通过 cat1 访问物种: {cat1.species}")
+    print(f"通过 cat2 访问物种: {cat2.species}")
+    assert Cat.species == "Felis catus"
+    assert cat1.species == "Felis catus"
+    
+    # 改变类变量会影响所有实例
+    Cat.species = "A new species"
+    print(f"\n修改类变量后，通过 cat1 访问物种: {cat1.species}")
+    assert cat1.species == "A new species"
+    
+    print("\n练习完成！")

@@ -7,20 +7,12 @@
 """
 
 class Car:
-    """一个代表汽车的基类。"""
-    def __init__(self, brand: str, model: str):
-        self.brand = brand
-        self.model = model
+    # 在这里写下你的代码
+    pass
 
 class ElectricCar(Car):
-    """一个代表电动汽车的子类。"""
-    def __init__(self, brand: str, model: str, battery_size: str):
-        """
-        初始化电动汽车，使用 super() 调用父类构造器。
-        """
-        # 在这里写下你的代码
-        super().__init__(brand, model)
-        self.battery_size = battery_size
+    # 在这里写下你的代码
+    pass
 
 if __name__ == '__main__':
     my_nio = ElectricCar("NIO", "ET7", "150kWh")

@@ -9,9 +9,8 @@
   age: 25
   ```
 """
-from typing import Dict, Any
 
-def display_info(**kwargs: Dict[str, Any]) -> str:
+def display_info(**kwargs):
     """
     接受任意数量的关键字参数，并返回一个格式化的、包含所有键值对的字符串。
     每个键值对占一行，格式为 "key: value"。
@@ -20,4 +19,9 @@ def display_info(**kwargs: Dict[str, Any]) -> str:
     :return: 一个多行字符串，描述所有传入的参数
     """
     # 在这里写下你的代码
-    raise NotImplementedError 
+    pass
+
+
+if __name__ == '__main__':
+    info = display_info(name="Alice", age=25, city="New York")
+    print(info)

@@ -7,14 +7,14 @@
 """
 from collections import Counter
 
-def count_character_frequency(s: str) -> Counter:
+def count_character_frequency(s):
     """
     使用 collections.Counter 统计字符串中每个字符的出现次数。
     :param s: 输入字符串
     :return: 一个 Counter 对象
     """
     # 在这里写下你的代码
-    raise NotImplementedError
+    pass
 
 if __name__ == '__main__':
     test_string = "abracadabra"

@@ -14,10 +14,6 @@ def test_duck_can_swim(duck):
     """测试 Duck 实例是否从 Swimmable 继承了 swim 方法。"""
     assert duck.swim() == "I am swimming!"
     
-def test_duck_can_quack(duck):
-    """测试 Duck 实例是否有自己的 quack 方法。"""
-    assert duck.quack() == "Quack! Quack!"
-    
 def test_duck_is_instance_of_all(duck):
     """测试 Duck 实例是否是所有父类的实例。"""
     assert isinstance(duck, Duck)

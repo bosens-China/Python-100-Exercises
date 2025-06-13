@@ -10,25 +10,15 @@
   ```
 """
 import os
-from typing import List
 
-def read_lines_with_numbers(filename: str) -> List[str]:
+def read_lines_with_numbers(filename):
     """
     逐行读取文件，并返回一个带有行号的字符串列表。
     :param filename: 要读取的文件的路径
     :return: 一个字符串列表，每项格式为 "行号: 内容"。如果文件未找到，返回空列表。
     """
-    formatted_lines = []
-    try:
-        with open(filename, 'r', encoding='utf-8') as f:
-            # 在这里写下你的代码
-            for i, line in enumerate(f, 1):
-                # line.strip() 用于移除每行末尾的换行符 \n
-                formatted_lines.append(f"{i}: {line.strip()}")
-    except FileNotFoundError:
-        print(f"Error: File '{filename}' not found.")
-    
-    return formatted_lines
+    # 在这里写下你的代码
+    pass
 
 if __name__ == '__main__':
     test_file = "lines.txt"
@@ -46,4 +36,4 @@ if __name__ == '__main__':
         
     # 清理
     if os.path.exists(test_file):
-        os.remove(test_file) 
+        os.remove(test_file)

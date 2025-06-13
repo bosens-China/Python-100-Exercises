@@ -14,16 +14,11 @@ def product_of_list(numbers):
     :return: 列表中所有元素的乘积。如果列表为空，此实现会引发TypeError。
     """
     # 在这里写下你的代码
-    if not numbers:
-        # reduce在空序列上且没有初始值时会引发TypeError
-        # 根据需求，我们可以定义空列表的乘积为1
-        return 1
-        
-    product = reduce(lambda x, y: x * y, numbers)
-    return product
+    pass
 
 if __name__ == '__main__':
     my_list = [1, 2, 3, 4]
+    # 调用 product_of_list 并打印结果
     result = product_of_list(my_list)
     print(f"列表 {my_list} 中所有元素的乘积是: {result}")
 

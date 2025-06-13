@@ -13,8 +13,7 @@ def get_even_numbers(numbers):
     :return: 一个只包含偶数的列表
     """
     # 在这里写下你的代码
-    even_numbers = []
-    return even_numbers
+    pass
 
 if __name__ == '__main__':
     num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]

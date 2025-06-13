@@ -15,25 +15,18 @@ def password_checker(correct_password, user_inputs):
     :return: 字符串 "登录成功" 或 "尝试次数过多，账户已锁定"
     """
     # 在这里写下你的代码
-    # 使用 while-else 结构
-    return ""
+    pass
 
 if __name__ == '__main__':
-    # 这是一个交互式演示，与测试函数逻辑分离
-    # 实际测试请看 test_exercise_033.py
-    
-    correct_pass = "python123"
-    attempts = 3
-    print("请输入密码，你有 3 次机会。")
+    # 注意：这个 main 部分只是为了演示，真正的逻辑和测试在函数中
+    # 场景1: 成功
+    print("场景1: 第二次尝试成功")
+    inputs1 = ["wrong", "python123", "another_wrong"]
+    result1 = password_checker("python123", inputs1)
+    print(result1) # 应该输出 "登录成功"
 
-    while attempts > 0:
-        guess = input("密码: ")
-        if guess == correct_pass:
-            print("登录成功")
-            break
-        else:
-            attempts -= 1
-            if attempts > 0:
-                print(f"密码错误，你还有 {attempts} 次机会。")
-    else:
-        print("尝试次数过多，账户已锁定") 
+    print("\n场景2: 失败")
+    # 场景2: 失败
+    inputs2 = ["wrong1", "wrong2", "wrong3"]
+    result2 = password_checker("python123", inputs2)
+    print(result2) # 应该输出 "尝试次数过多，账户已锁定"

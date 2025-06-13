@@ -14,7 +14,6 @@ def calculate_circle_area(radius):
     :return: 圆的面积
     """
     # 在这里写下你的代码
-    # 建议使用 math.pi 以获得更精确的结果
     pass
 
 if __name__ == '__main__':

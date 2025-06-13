@@ -7,7 +7,7 @@
 """
 import os
 
-def write_to_file(filename="output.txt", content="This is a new file."):
+def write_to_file(filename, content):
     """
     将指定的 content 写入到 filename 文件中。
     如果文件已存在，会覆盖其内容。
@@ -15,24 +15,20 @@ def write_to_file(filename="output.txt", content="This is a new file."):
     :param content: 要写入的字符串内容
     :return: 如果成功则返回 True，否则返回 False
     """
-    try:
-        f = open(filename, 'w', encoding='utf-8')
-        f.write(content)
-        f.close()
-        return True
-    except IOError:
-        return False
+    # 在这里写下你的代码
+    pass
 
 if __name__ == '__main__':
     # 调用函数写入文件
-    success = write_to_file()
+    filename = "output.txt"
+    content = "This is a new file."
+    success = write_to_file(filename, content)
     
-    if success and os.path.exists("output.txt"):
-        print("File 'output.txt' created successfully.")
-        # 读取并验证内容
-        with open("output.txt", 'r', encoding='utf-8') as f:
-            print(f"File content: '{f.read()}'")
-        # 清理
-        os.remove("output.txt")
+    if success:
+        print(f"成功将内容写入到 '{filename}'。")
+        print("请手动检查该文件以验证内容。")
     else:
-        print("Failed to create file 'output.txt'.") 
+        print(f"写入文件 '{filename}' 失败。")
+    
+    # 提示：你可以尝试运行多次，看看文件内容是否被覆盖。
+    # 你也可以在程序运行后手动删除 output.txt 文件。 

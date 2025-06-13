@@ -13,8 +13,7 @@ def count_vowels(s):
     :return: 元音字母的总数
     """
     # 在这里写下你的代码
-    count = 0
-    return count
+    pass
 
 if __name__ == '__main__':
     text = "Hello Python"

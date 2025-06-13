@@ -7,25 +7,15 @@
 """
 import csv
 import os
-from typing import List
 
-def write_data_to_csv(filename: str, data: List[List[Any]]):
+def write_data_to_csv(filename, data):
     """
     将列表的列表数据写入到 CSV 文件中。
     :param filename: 要写入的 CSV 文件名
     :param data: 包含多行数据的列表，每行本身也是一个列表
     """
     # 在这里写下你的代码
-    try:
-        # newline='' 是写入 CSV 文件时的推荐做法，可以防止出现空行
-        with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
-            # 创建一个 writer 对象
-            csv_writer = csv.writer(csvfile)
-            # 使用 writerows 一次性写入所有数据
-            csv_writer.writerows(data)
-        return True
-    except IOError:
-        return False
+    pass
 
 if __name__ == '__main__':
     student_data = [

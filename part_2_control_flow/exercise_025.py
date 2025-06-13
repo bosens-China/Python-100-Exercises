@@ -12,8 +12,7 @@ def find_narcissistic_numbers():
     :return: 一个包含所有水仙花数的列表
     """
     # 在这里写下你的代码
-    narcissistic_numbers = []
-    return narcissistic_numbers
+    pass
 
 if __name__ == '__main__':
     numbers = find_narcissistic_numbers()
