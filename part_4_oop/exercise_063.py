@@ -1,9 +1,21 @@
 """
 ### 63. 类的继承
 
-- **描述:** 创建一个 `Car` 类，有 `brand` 和 `model` 属性。然后创建一个 `ElectricCar` 类，它继承自 `Car` 类，并有一个额外的 `battery_size` 属性。
-- **提示:** `class ElectricCar(Car):`。在 `ElectricCar` 的 `__init__` 中调用父类的 `__init__`。
-- **期待:** `my_tesla = ElectricCar("Tesla", "Model S", "100kWh")` 能成功创建对象。
+- **描述:** 
+  1. 创建一个 `Car` 基类，包含品牌(brand)和型号(model)属性
+  2. 实现 `get_full_name()` 方法返回完整车型名称
+  3. 创建 `ElectricCar` 子类继承 `Car` 类，增加电池容量(battery_size)属性
+
+- **提示:**
+  1. 使用 `class ElectricCar(Car):` 语法实现继承
+  2. 在子类 `__init__` 中使用 `super()` 调用父类初始化方法
+  3. 子类需添加 `get_battery_info()` 方法返回电池信息
+
+- **期待:**
+  1. `my_car = Car("Toyota", "Corolla")` 能正确创建实例
+  2. `my_tesla = ElectricCar("Tesla", "Model S", "100kWh")` 能正确创建实例
+  3. 能通过 `isinstance(my_tesla, Car)` 测试
+  4. 能正确调用继承和新增的方法
 """
 
 class Car:
@@ -15,6 +27,7 @@ class ElectricCar(Car):
     """一个代表电动汽车的子类。"""
     # 在这里写下你的代码
     pass
+
 
 if __name__ == '__main__':
     my_car = Car("Toyota", "Corolla")
