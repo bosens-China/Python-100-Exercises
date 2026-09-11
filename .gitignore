@@ -184,6 +184,7 @@ cython_debug/
 # Online practice app
 node_modules/
 web/public/course.json
+web/public/favicon.png
 web/public/runtime/
 web/test-results/
 web/playwright-report/

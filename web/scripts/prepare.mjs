@@ -19,6 +19,7 @@ if (result.error) throw result.error
 if (result.status !== 0) process.exit(result.status ?? 1)
 const runtime = resolve(web, 'public/runtime')
 await mkdir(runtime, { recursive: true })
+await copyFile(resolve(root, 'image.png'), resolve(web, 'public/favicon.png'))
 await copyFile(resolve(root, 'tools/grader.py'), resolve(runtime, 'grader.py'))
 const pyodide = resolve(web, 'node_modules/pyodide')
 for (const name of await readdir(pyodide)) {

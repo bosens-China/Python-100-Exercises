@@ -1,7 +1,6 @@
 import { useRef } from 'react'
 import { App, Button, Dropdown, Tooltip } from 'antd'
 import {
-  CodeOutlined,
   DownloadOutlined,
   ImportOutlined,
   SettingOutlined,
@@ -58,7 +57,12 @@ export function Header({ course, progress, onImport, mode, onTheme }: Props) {
     <header className="app-header">
       <a className="brand" href="#/exercises/001">
         <span className="brand-mark">
-          <CodeOutlined aria-hidden="true" />
+          <img
+            src={`${import.meta.env.BASE_URL}favicon.png`}
+            alt=""
+            width={34}
+            height={34}
+          />
         </span>
         <span>
           Python<span className="brand-100">100</span>

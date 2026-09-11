@@ -11,7 +11,7 @@ pnpm --dir web install
 pnpm --dir web dev
 ```
 
-`dev` 和 `build` 自动导出题库，并从锁定的 Pyodide 包复制执行资源至 `public/runtime/`。这些生成文件不提交 Git。更新题库或判题内核后重新执行上述命令。没有 CDN 或业务 API 依赖；首次运行按需下载同站点约 15 MB 的 Python 资源，后续使用浏览器 HTTP 缓存。
+`dev` 和 `build` 自动导出题库，并从锁定的 Pyodide 包复制执行资源至 `public/runtime/`。网站图标复用根目录 `image.png`，启动或构建时复制到 `public/favicon.png`。这些生成文件不提交 Git。更新题库或判题内核后重新执行上述命令。没有 CDN 或业务 API 依赖；首次运行按需下载同站点约 15 MB 的 Python 资源，后续使用浏览器 HTTP 缓存。
 
 技术栈：Vite、React、TypeScript、React Compiler、Ant Design、少量 UnoCSS、CodeMirror、Pyodide。Compiler 通过 Vite React 官方模板的 Babel preset 启用；UnoCSS 插件在 React 插件之前。浅色和深色主题默认跟随系统。
 
