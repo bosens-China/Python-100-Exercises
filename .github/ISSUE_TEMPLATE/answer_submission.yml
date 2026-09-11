@@ -9,6 +9,17 @@ body:
         感谢你提交答案！请确保你的代码能够通过对应的测试。
 
   - type: dropdown
+    id: course-version
+    attributes:
+      label: 课程版本
+      description: 新旧课程的同号题内容可能不同，请注明版本。
+      options:
+        - "python-100-v2（现行题库）"
+        - "legacy-v1（旧版归档）"
+    validations:
+      required: true
+
+  - type: dropdown
     id: exercise-number
     attributes:
       label: 题目编号

@@ -1,0 +1,14 @@
+{
+  "id": "065",
+  "title": "修复跨调用数据泄漏",
+  "category": "06-errors",
+  "path": "06-errors/065-mutable-default",
+  "prerequisites": [
+    "064"
+  ],
+  "goal": "识别可变默认参数的问题。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

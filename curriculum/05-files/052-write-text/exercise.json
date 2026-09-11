@@ -1,0 +1,14 @@
+{
+  "id": "052",
+  "title": "保存文本结果",
+  "category": "05-files",
+  "path": "05-files/052-write-text",
+  "prerequisites": [
+    "051"
+  ],
+  "goal": "写入并覆盖文件。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

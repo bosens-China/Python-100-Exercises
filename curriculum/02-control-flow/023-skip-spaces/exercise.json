@@ -1,0 +1,14 @@
+{
+  "id": "023",
+  "title": "跳过空白字符",
+  "category": "02-control-flow",
+  "path": "02-control-flow/023-skip-spaces",
+  "prerequisites": [
+    "022"
+  ],
+  "goal": "使用 continue 跳过当前一轮。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

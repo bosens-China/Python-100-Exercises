@@ -1,0 +1,14 @@
+{
+  "id": "054",
+  "title": "提取有效文本行",
+  "category": "05-files",
+  "path": "05-files/054-nonblank-lines",
+  "prerequisites": [
+    "053"
+  ],
+  "goal": "组合文件读取和字符串清理。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

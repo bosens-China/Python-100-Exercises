@@ -1,0 +1,14 @@
+{
+  "id": "022",
+  "title": "倒计时文本",
+  "category": "02-control-flow",
+  "path": "02-control-flow/022-countdown",
+  "prerequisites": [
+    "021"
+  ],
+  "goal": "使用 while 并保证循环前进。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

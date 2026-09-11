@@ -1,0 +1,14 @@
+{
+  "id": "085",
+  "title": "构造模拟响应",
+  "category": "09-http",
+  "path": "09-http/085-response",
+  "prerequisites": [
+    "084"
+  ],
+  "goal": "理解状态码与响应体。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "072",
+  "title": "保护库存快照",
+  "category": "07-objects",
+  "path": "07-objects/072-inventory-object",
+  "prerequisites": [
+    "071"
+  ],
+  "goal": "避免通过返回值泄漏内部可变状态。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

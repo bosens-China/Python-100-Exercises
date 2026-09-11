@@ -1,0 +1,14 @@
+{
+  "id": "088",
+  "title": "解析分页查询参数",
+  "category": "09-http",
+  "path": "09-http/088-query-page",
+  "prerequisites": [
+    "087"
+  ],
+  "goal": "为缺省值和非法值设定不同规则。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

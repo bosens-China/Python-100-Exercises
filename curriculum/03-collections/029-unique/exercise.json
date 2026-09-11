@@ -1,0 +1,14 @@
+{
+  "id": "029",
+  "title": "按首次出现顺序去重",
+  "category": "03-collections",
+  "path": "03-collections/029-unique",
+  "prerequisites": [
+    "028"
+  ],
+  "goal": "用成员判断实现有序去重。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

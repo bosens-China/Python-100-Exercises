@@ -21,6 +21,17 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: course-version
+    attributes:
+      label: 课程版本
+      options:
+        - "python-100-v2（现行题库）"
+        - "legacy-v1（旧版归档）"
+        - "与具体题目无关"
+    validations:
+      required: true
+
   - type: input
     id: related-exercise
     attributes:

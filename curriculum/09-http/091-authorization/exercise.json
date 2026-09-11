@@ -1,0 +1,14 @@
+{
+  "id": "091",
+  "title": "判断当前用户能否修改记录",
+  "category": "09-http",
+  "path": "09-http/091-authorization",
+  "prerequisites": [
+    "090"
+  ],
+  "goal": "区分登录身份与访问权限。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

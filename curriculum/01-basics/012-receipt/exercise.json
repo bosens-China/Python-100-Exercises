@@ -1,0 +1,14 @@
+{
+  "id": "012",
+  "title": "生成购物小票",
+  "category": "01-basics",
+  "path": "01-basics/012-receipt",
+  "prerequisites": [
+    "011"
+  ],
+  "goal": "组合转换、计算与格式化。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "004",
+  "title": "换算完整分钟",
+  "category": "01-basics",
+  "path": "01-basics/004-minutes",
+  "prerequisites": [
+    "003"
+  ],
+  "goal": "区分整数除法与普通除法。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

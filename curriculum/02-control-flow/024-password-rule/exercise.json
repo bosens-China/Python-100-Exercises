@@ -1,0 +1,14 @@
+{
+  "id": "024",
+  "title": "检查密码练习规则",
+  "category": "02-control-flow",
+  "path": "02-control-flow/024-password-rule",
+  "prerequisites": [
+    "023"
+  ],
+  "goal": "综合循环、标记变量和条件。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

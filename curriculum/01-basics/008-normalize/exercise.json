@@ -1,0 +1,14 @@
+{
+  "id": "008",
+  "title": "整理用户输入",
+  "category": "01-basics",
+  "path": "01-basics/008-normalize",
+  "prerequisites": [
+    "007"
+  ],
+  "goal": "调用字符串方法。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

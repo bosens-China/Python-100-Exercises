@@ -1,0 +1,14 @@
+{
+  "id": "030",
+  "title": "查询字典配置",
+  "category": "03-collections",
+  "path": "03-collections/030-lookup",
+  "prerequisites": [
+    "029"
+  ],
+  "goal": "认识键值映射与缺省值。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

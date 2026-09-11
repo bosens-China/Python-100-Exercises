@@ -1,0 +1,16 @@
+{
+  "id": "098",
+  "title": "任务清单：安全导入与导出",
+  "category": "10-project",
+  "path": "10-project/098-project-json",
+  "prerequisites": [
+    "097"
+  ],
+  "goal": "验证完整数据后再替换状态。",
+  "starter_files": [
+    "domain.py",
+    "store.py",
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "036",
+  "title": "展开一层列表",
+  "category": "03-collections",
+  "path": "03-collections/036-flatten",
+  "prerequisites": [
+    "035"
+  ],
+  "goal": "使用嵌套循环。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

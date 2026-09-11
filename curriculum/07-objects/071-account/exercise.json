@@ -1,0 +1,14 @@
+{
+  "id": "071",
+  "title": "管理账户余额",
+  "category": "07-objects",
+  "path": "07-objects/071-account",
+  "prerequisites": [
+    "070"
+  ],
+  "goal": "在改变状态前完成校验。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

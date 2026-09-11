@@ -1,0 +1,14 @@
+{
+  "id": "016",
+  "title": "计算包邮条件",
+  "category": "02-control-flow",
+  "path": "02-control-flow/016-shipping",
+  "prerequisites": [
+    "015"
+  ],
+  "goal": "组合布尔条件。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

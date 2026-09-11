@@ -1,0 +1,15 @@
+{
+  "id": "048",
+  "title": "从另一个文件导入函数",
+  "category": "04-functions",
+  "path": "04-functions/048-split-module",
+  "prerequisites": [
+    "047"
+  ],
+  "goal": "在两份文件之间组织代码。",
+  "starter_files": [
+    "pricing.py",
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

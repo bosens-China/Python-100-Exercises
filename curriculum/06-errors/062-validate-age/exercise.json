@@ -1,0 +1,14 @@
+{
+  "id": "062",
+  "title": "主动拒绝非法年龄",
+  "category": "06-errors",
+  "path": "06-errors/062-validate-age",
+  "prerequisites": [
+    "061"
+  ],
+  "goal": "使用 raise 表达输入约束。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "051",
+  "title": "读取练习文件",
+  "category": "05-files",
+  "path": "05-files/051-read-text",
+  "prerequisites": [
+    "050"
+  ],
+  "goal": "用 with 管理文本文件。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

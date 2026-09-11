@@ -1,0 +1,14 @@
+{
+  "id": "087",
+  "title": "校验创建任务的请求体",
+  "category": "09-http",
+  "path": "09-http/087-validate-body",
+  "prerequisites": [
+    "086"
+  ],
+  "goal": "把外部输入转换为明确的业务数据。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "039",
+  "title": "提供默认问候对象",
+  "category": "04-functions",
+  "path": "04-functions/039-default-argument",
+  "prerequisites": [
+    "038"
+  ],
+  "goal": "定义默认参数。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

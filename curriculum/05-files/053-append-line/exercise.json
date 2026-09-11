@@ -1,0 +1,14 @@
+{
+  "id": "053",
+  "title": "追加日志行",
+  "category": "05-files",
+  "path": "05-files/053-append-line",
+  "prerequisites": [
+    "052"
+  ],
+  "goal": "区分追加与覆盖。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "026",
+  "title": "倒序复制列表",
+  "category": "03-collections",
+  "path": "03-collections/026-reverse-list",
+  "prerequisites": [
+    "025"
+  ],
+  "goal": "返回新列表，避免意外修改输入。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

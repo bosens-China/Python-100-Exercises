@@ -1,0 +1,14 @@
+{
+  "id": "015",
+  "title": "按年龄计算票价",
+  "category": "02-control-flow",
+  "path": "02-control-flow/015-ticket",
+  "prerequisites": [
+    "014"
+  ],
+  "goal": "按顺序匹配区间。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

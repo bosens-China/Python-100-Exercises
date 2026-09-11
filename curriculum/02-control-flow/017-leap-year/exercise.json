@@ -1,0 +1,14 @@
+{
+  "id": "017",
+  "title": "判断闰年",
+  "category": "02-control-flow",
+  "path": "02-control-flow/017-leap-year",
+  "prerequisites": [
+    "016"
+  ],
+  "goal": "把有例外的规则转换为条件。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

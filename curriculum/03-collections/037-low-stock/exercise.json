@@ -1,0 +1,14 @@
+{
+  "id": "037",
+  "title": "筛选缺货商品",
+  "category": "03-collections",
+  "path": "03-collections/037-low-stock",
+  "prerequisites": [
+    "036"
+  ],
+  "goal": "组合字典遍历、条件与排序。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

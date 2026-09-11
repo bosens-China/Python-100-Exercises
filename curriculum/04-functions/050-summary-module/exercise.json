@@ -1,0 +1,15 @@
+{
+  "id": "050",
+  "title": "组织一份统计报告",
+  "category": "04-functions",
+  "path": "04-functions/050-summary-module",
+  "prerequisites": [
+    "049"
+  ],
+  "goal": "综合函数拆分与模块复用。",
+  "starter_files": [
+    "stats.py",
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

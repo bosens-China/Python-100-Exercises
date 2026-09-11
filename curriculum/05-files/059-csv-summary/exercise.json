@@ -1,0 +1,14 @@
+{
+  "id": "059",
+  "title": "汇总销售表",
+  "category": "05-files",
+  "path": "05-files/059-csv-summary",
+  "prerequisites": [
+    "058"
+  ],
+  "goal": "从文件记录计算业务结果。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

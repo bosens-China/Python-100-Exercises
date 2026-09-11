@@ -1,0 +1,14 @@
+{
+  "id": "006",
+  "title": "测量文字长度",
+  "category": "01-basics",
+  "path": "01-basics/006-text-length",
+  "prerequisites": [
+    "005"
+  ],
+  "goal": "调用已有的内置函数。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

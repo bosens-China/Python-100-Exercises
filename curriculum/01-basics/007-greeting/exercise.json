@@ -1,0 +1,14 @@
+{
+  "id": "007",
+  "title": "拼接欢迎语",
+  "category": "01-basics",
+  "path": "01-basics/007-greeting",
+  "prerequisites": [
+    "006"
+  ],
+  "goal": "拼接字符串。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "089",
+  "title": "分发模拟请求",
+  "category": "09-http",
+  "path": "09-http/089-route",
+  "prerequisites": [
+    "088"
+  ],
+  "goal": "区分路径不存在与方法不支持。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

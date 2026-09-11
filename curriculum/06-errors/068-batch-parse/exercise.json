@@ -1,0 +1,14 @@
+{
+  "id": "068",
+  "title": "批量导入并报告错误位置",
+  "category": "06-errors",
+  "path": "06-errors/068-batch-parse",
+  "prerequisites": [
+    "067"
+  ],
+  "goal": "让单条坏数据不阻塞整批处理。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

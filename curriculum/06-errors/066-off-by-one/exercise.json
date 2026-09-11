@@ -1,0 +1,14 @@
+{
+  "id": "066",
+  "title": "修复分页边界",
+  "category": "06-errors",
+  "path": "06-errors/066-off-by-one",
+  "prerequisites": [
+    "065"
+  ],
+  "goal": "用边界用例定位索引错误。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

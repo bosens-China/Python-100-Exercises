@@ -1,0 +1,14 @@
+{
+  "id": "079",
+  "title": "查询未完成任务",
+  "category": "08-database",
+  "path": "08-database/079-select-rows",
+  "prerequisites": [
+    "078"
+  ],
+  "goal": "使用 WHERE 与 ORDER BY。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

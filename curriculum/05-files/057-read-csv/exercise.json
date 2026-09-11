@@ -1,0 +1,14 @@
+{
+  "id": "057",
+  "title": "读取 CSV 人员表",
+  "category": "05-files",
+  "path": "05-files/057-read-csv",
+  "prerequisites": [
+    "056"
+  ],
+  "goal": "正确处理带引号的逗号。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

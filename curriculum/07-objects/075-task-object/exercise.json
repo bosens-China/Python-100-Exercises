@@ -1,0 +1,14 @@
+{
+  "id": "075",
+  "title": "表示一条任务",
+  "category": "07-objects",
+  "path": "07-objects/075-task-object",
+  "prerequisites": [
+    "074"
+  ],
+  "goal": "为对象提供状态切换与序列化。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

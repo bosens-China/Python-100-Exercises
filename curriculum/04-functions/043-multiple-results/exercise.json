@@ -1,0 +1,14 @@
+{
+  "id": "043",
+  "title": "同时返回商和余数",
+  "category": "04-functions",
+  "path": "04-functions/043-multiple-results",
+  "prerequisites": [
+    "042"
+  ],
+  "goal": "使用元组返回多个结果。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

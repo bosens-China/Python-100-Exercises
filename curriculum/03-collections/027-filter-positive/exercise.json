@@ -1,0 +1,14 @@
+{
+  "id": "027",
+  "title": "筛选正数",
+  "category": "03-collections",
+  "path": "03-collections/027-filter-positive",
+  "prerequisites": [
+    "026"
+  ],
+  "goal": "用 append 收集筛选结果。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

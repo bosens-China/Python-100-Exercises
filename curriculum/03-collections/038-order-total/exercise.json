@@ -1,0 +1,14 @@
+{
+  "id": "038",
+  "title": "汇总订单金额",
+  "category": "03-collections",
+  "path": "03-collections/038-order-total",
+  "prerequisites": [
+    "037"
+  ],
+  "goal": "处理字典列表中的业务字段。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

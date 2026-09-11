@@ -1,0 +1,14 @@
+{
+  "id": "080",
+  "title": "完成指定数据库任务",
+  "category": "08-database",
+  "path": "08-database/080-update-row",
+  "prerequisites": [
+    "079"
+  ],
+  "goal": "精确更新目标记录。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

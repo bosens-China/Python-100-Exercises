@@ -1,0 +1,14 @@
+{
+  "id": "081",
+  "title": "删除指定数据库任务",
+  "category": "08-database",
+  "path": "08-database/081-delete-row",
+  "prerequisites": [
+    "080"
+  ],
+  "goal": "根据受影响记录反馈删除结果。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

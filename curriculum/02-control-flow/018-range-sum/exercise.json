@@ -1,0 +1,14 @@
+{
+  "id": "018",
+  "title": "累计 1 到 n",
+  "category": "02-control-flow",
+  "path": "02-control-flow/018-range-sum",
+  "prerequisites": [
+    "017"
+  ],
+  "goal": "使用 for 与累加变量。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

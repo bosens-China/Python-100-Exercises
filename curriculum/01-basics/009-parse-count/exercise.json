@@ -1,0 +1,14 @@
+{
+  "id": "009",
+  "title": "把数量文字转成数字",
+  "category": "01-basics",
+  "path": "01-basics/009-parse-count",
+  "prerequisites": [
+    "008"
+  ],
+  "goal": "进行基本类型转换。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

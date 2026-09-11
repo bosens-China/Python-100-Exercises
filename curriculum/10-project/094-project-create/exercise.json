@@ -1,0 +1,16 @@
+{
+  "id": "094",
+  "title": "任务清单：创建与编号",
+  "category": "10-project",
+  "path": "10-project/094-project-create",
+  "prerequisites": [
+    "093"
+  ],
+  "goal": "管理稳定 ID 和新增状态。",
+  "starter_files": [
+    "domain.py",
+    "store.py",
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "011",
+  "title": "判断是否为偶数",
+  "category": "01-basics",
+  "path": "01-basics/011-even",
+  "prerequisites": [
+    "010"
+  ],
+  "goal": "返回布尔值。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

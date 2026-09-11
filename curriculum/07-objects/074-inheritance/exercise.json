@@ -1,0 +1,14 @@
+{
+  "id": "074",
+  "title": "扩展会员折扣",
+  "category": "07-objects",
+  "path": "07-objects/074-inheritance",
+  "prerequisites": [
+    "073"
+  ],
+  "goal": "理解基本继承与方法覆盖。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

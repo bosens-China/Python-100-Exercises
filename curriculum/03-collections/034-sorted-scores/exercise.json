@@ -1,0 +1,14 @@
+{
+  "id": "034",
+  "title": "排序成绩副本",
+  "category": "03-collections",
+  "path": "03-collections/034-sorted-scores",
+  "prerequisites": [
+    "033"
+  ],
+  "goal": "使用 sorted 排序。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

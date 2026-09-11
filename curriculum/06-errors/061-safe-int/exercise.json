@@ -1,0 +1,14 @@
+{
+  "id": "061",
+  "title": "处理无效整数输入",
+  "category": "06-errors",
+  "path": "06-errors/061-safe-int",
+  "prerequisites": [
+    "060"
+  ],
+  "goal": "捕获指定类型的异常。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

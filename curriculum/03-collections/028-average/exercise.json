@@ -1,0 +1,14 @@
+{
+  "id": "028",
+  "title": "计算列表平均值",
+  "category": "03-collections",
+  "path": "03-collections/028-average",
+  "prerequisites": [
+    "027"
+  ],
+  "goal": "处理空集合与除法。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "100",
+  "title": "任务清单：完成在线业务闭环",
+  "category": "10-project",
+  "path": "10-project/100-project-api",
+  "prerequisites": [
+    "099"
+  ],
+  "goal": "把多文件项目接入模拟接口并回归已有能力。",
+  "starter_files": [
+    "domain.py",
+    "store.py",
+    "persistence.py",
+    "api.py",
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "021",
+  "title": "找到第一个数字字符",
+  "category": "02-control-flow",
+  "path": "02-control-flow/021-first-digit",
+  "prerequisites": [
+    "020"
+  ],
+  "goal": "用提前返回结束查找。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

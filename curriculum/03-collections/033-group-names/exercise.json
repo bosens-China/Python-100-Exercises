@@ -1,0 +1,14 @@
+{
+  "id": "033",
+  "title": "按首字母分组",
+  "category": "03-collections",
+  "path": "03-collections/033-group-names",
+  "prerequisites": [
+    "032"
+  ],
+  "goal": "把列表作为字典的值。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

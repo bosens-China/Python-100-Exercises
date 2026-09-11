@@ -1,0 +1,14 @@
+{
+  "id": "044",
+  "title": "把处理函数当作参数",
+  "category": "04-functions",
+  "path": "04-functions/044-callback",
+  "prerequisites": [
+    "043"
+  ],
+  "goal": "调用传入的函数。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

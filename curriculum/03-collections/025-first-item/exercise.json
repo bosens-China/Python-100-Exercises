@@ -1,0 +1,14 @@
+{
+  "id": "025",
+  "title": "读取列表首项",
+  "category": "03-collections",
+  "path": "03-collections/025-first-item",
+  "prerequisites": [
+    "024"
+  ],
+  "goal": "认识列表和索引。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

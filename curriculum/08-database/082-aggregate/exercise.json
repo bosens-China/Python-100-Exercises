@@ -1,0 +1,14 @@
+{
+  "id": "082",
+  "title": "汇总任务完成数量",
+  "category": "08-database",
+  "path": "08-database/082-aggregate",
+  "prerequisites": [
+    "081"
+  ],
+  "goal": "使用 SQL 聚合。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

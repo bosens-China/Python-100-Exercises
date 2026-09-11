@@ -1,0 +1,14 @@
+{
+  "id": "002",
+  "title": "计算两项费用",
+  "category": "01-basics",
+  "path": "01-basics/002-add",
+  "prerequisites": [
+    "001"
+  ],
+  "goal": "使用加法计算整数结果。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

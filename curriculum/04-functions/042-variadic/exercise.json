@@ -1,0 +1,14 @@
+{
+  "id": "042",
+  "title": "接收多项费用",
+  "category": "04-functions",
+  "path": "04-functions/042-variadic",
+  "prerequisites": [
+    "041"
+  ],
+  "goal": "认识可变位置参数。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

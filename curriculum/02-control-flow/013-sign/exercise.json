@@ -1,0 +1,14 @@
+{
+  "id": "013",
+  "title": "区分正数、负数与零",
+  "category": "02-control-flow",
+  "path": "02-control-flow/013-sign",
+  "prerequisites": [
+    "012"
+  ],
+  "goal": "使用 if / elif / else。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "032",
+  "title": "合并库存数量",
+  "category": "03-collections",
+  "path": "03-collections/032-merge-stock",
+  "prerequisites": [
+    "031"
+  ],
+  "goal": "遍历字典键值对并复制数据。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

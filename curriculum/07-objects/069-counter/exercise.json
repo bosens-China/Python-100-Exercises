@@ -1,0 +1,14 @@
+{
+  "id": "069",
+  "title": "创建独立计数器",
+  "category": "07-objects",
+  "path": "07-objects/069-counter",
+  "prerequisites": [
+    "068"
+  ],
+  "goal": "认识类、实例和 self。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

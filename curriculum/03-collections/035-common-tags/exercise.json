@@ -1,0 +1,14 @@
+{
+  "id": "035",
+  "title": "找共同标签",
+  "category": "03-collections",
+  "path": "03-collections/035-common-tags",
+  "prerequisites": [
+    "034"
+  ],
+  "goal": "认识集合与交集。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

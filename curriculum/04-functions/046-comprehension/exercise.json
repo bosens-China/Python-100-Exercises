@@ -1,0 +1,14 @@
+{
+  "id": "046",
+  "title": "提取启用用户",
+  "category": "04-functions",
+  "path": "04-functions/046-comprehension",
+  "prerequisites": [
+    "045"
+  ],
+  "goal": "认识列表推导式。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

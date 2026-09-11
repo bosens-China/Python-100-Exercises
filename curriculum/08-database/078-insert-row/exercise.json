@@ -1,0 +1,14 @@
+{
+  "id": "078",
+  "title": "插入任务记录",
+  "category": "08-database",
+  "path": "08-database/078-insert-row",
+  "prerequisites": [
+    "077"
+  ],
+  "goal": "使用参数化 SQL。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

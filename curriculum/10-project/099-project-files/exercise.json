@@ -1,0 +1,17 @@
+{
+  "id": "099",
+  "title": "任务清单：保存与恢复工作区",
+  "category": "10-project",
+  "path": "10-project/099-project-files",
+  "prerequisites": [
+    "098"
+  ],
+  "goal": "组合存储对象和文件模块。",
+  "starter_files": [
+    "domain.py",
+    "store.py",
+    "persistence.py",
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

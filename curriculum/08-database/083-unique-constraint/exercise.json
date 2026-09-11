@@ -1,0 +1,14 @@
+{
+  "id": "083",
+  "title": "处理重复用户名",
+  "category": "08-database",
+  "path": "08-database/083-unique-constraint",
+  "prerequisites": [
+    "082"
+  ],
+  "goal": "依靠唯一约束维护一致性。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

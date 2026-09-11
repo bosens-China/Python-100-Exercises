@@ -1,0 +1,14 @@
+{
+  "id": "084",
+  "title": "保证转账全部成功或全部回滚",
+  "category": "08-database",
+  "path": "08-database/084-transaction",
+  "prerequisites": [
+    "083"
+  ],
+  "goal": "把多次写入放在同一事务。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

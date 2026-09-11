@@ -1,0 +1,14 @@
+{
+  "id": "005",
+  "title": "计算剩余秒数",
+  "category": "01-basics",
+  "path": "01-basics/005-remainder",
+  "prerequisites": [
+    "004"
+  ],
+  "goal": "使用取余运算。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

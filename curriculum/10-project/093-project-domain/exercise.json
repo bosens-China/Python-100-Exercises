@@ -1,0 +1,15 @@
+{
+  "id": "093",
+  "title": "任务清单：定义数据规则",
+  "category": "10-project",
+  "path": "10-project/093-project-domain",
+  "prerequisites": [
+    "092"
+  ],
+  "goal": "为综合项目建立可复用的数据契约。",
+  "starter_files": [
+    "domain.py",
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

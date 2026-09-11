@@ -1,0 +1,14 @@
+{
+  "id": "056",
+  "title": "保存 JSON 数据",
+  "category": "05-files",
+  "path": "05-files/056-save-json",
+  "prerequisites": [
+    "055"
+  ],
+  "goal": "序列化数据并验证往返。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

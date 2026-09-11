@@ -1,0 +1,14 @@
+{
+  "id": "063",
+  "title": "区分错误和正常结果",
+  "category": "06-errors",
+  "path": "06-errors/063-division-error",
+  "prerequisites": [
+    "062"
+  ],
+  "goal": "处理特定运行异常。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

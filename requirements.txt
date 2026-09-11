@@ -1,14 +1,2 @@
-fastapi
-uvicorn
-sqlalchemy
-passlib[bcrypt]
-python-jose[cryptography]
-pydantic-settings
-alembic
-slowapi
-typer
-aiosqlite
-requests
-pytest
-pytest-mock
-ruff
+# 仅供题库维护者运行工具回归测试；学习运行内核只使用标准库。
+pytest>=8,<9

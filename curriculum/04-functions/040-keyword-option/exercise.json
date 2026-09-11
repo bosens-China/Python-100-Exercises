@@ -1,0 +1,14 @@
+{
+  "id": "040",
+  "title": "用参数控制格式",
+  "category": "04-functions",
+  "path": "04-functions/040-keyword-option",
+  "prerequisites": [
+    "039"
+  ],
+  "goal": "理解关键字参数与默认行为。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

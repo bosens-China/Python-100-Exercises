@@ -1,0 +1,14 @@
+{
+  "id": "041",
+  "title": "拆分价格计算",
+  "category": "04-functions",
+  "path": "04-functions/041-reuse-helper",
+  "prerequisites": [
+    "040"
+  ],
+  "goal": "让一个函数调用另一个函数。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

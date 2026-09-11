@@ -1,0 +1,14 @@
+{
+  "id": "077",
+  "title": "创建任务数据表",
+  "category": "08-database",
+  "path": "08-database/077-create-table",
+  "prerequisites": [
+    "076"
+  ],
+  "goal": "理解表、列和建表语句。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

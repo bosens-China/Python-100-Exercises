@@ -1,0 +1,14 @@
+{
+  "id": "003",
+  "title": "计算矩形面积",
+  "category": "01-basics",
+  "path": "01-basics/003-rectangle",
+  "prerequisites": [
+    "002"
+  ],
+  "goal": "使用乘法。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

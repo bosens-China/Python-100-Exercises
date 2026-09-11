@@ -1,0 +1,14 @@
+{
+  "id": "031",
+  "title": "统计词频",
+  "category": "03-collections",
+  "path": "03-collections/031-word-count",
+  "prerequisites": [
+    "030"
+  ],
+  "goal": "用字典累计计数。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

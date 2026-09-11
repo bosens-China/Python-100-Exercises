@@ -1,0 +1,14 @@
+{
+  "id": "019",
+  "title": "累计乘积",
+  "category": "02-control-flow",
+  "path": "02-control-flow/019-factorial",
+  "prerequisites": [
+    "018"
+  ],
+  "goal": "选择正确的循环初始值。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

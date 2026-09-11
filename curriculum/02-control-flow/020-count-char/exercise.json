@@ -1,0 +1,14 @@
+{
+  "id": "020",
+  "title": "统计指定字符",
+  "category": "02-control-flow",
+  "path": "02-control-flow/020-count-char",
+  "prerequisites": [
+    "019"
+  ],
+  "goal": "遍历字符串并在条件满足时累加。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

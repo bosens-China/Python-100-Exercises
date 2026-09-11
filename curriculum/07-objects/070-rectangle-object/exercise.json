@@ -1,0 +1,14 @@
+{
+  "id": "070",
+  "title": "封装矩形尺寸",
+  "category": "07-objects",
+  "path": "07-objects/070-rectangle-object",
+  "prerequisites": [
+    "069"
+  ],
+  "goal": "从实例状态计算结果。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

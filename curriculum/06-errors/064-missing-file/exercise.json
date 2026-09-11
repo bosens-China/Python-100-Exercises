@@ -1,0 +1,14 @@
+{
+  "id": "064",
+  "title": "给缺失文件提供默认内容",
+  "category": "06-errors",
+  "path": "06-errors/064-missing-file",
+  "prerequisites": [
+    "063"
+  ],
+  "goal": "避免把所有文件错误都视为不存在。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

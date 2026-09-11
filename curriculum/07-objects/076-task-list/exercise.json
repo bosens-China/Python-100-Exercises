@@ -1,0 +1,14 @@
+{
+  "id": "076",
+  "title": "封装任务集合",
+  "category": "07-objects",
+  "path": "07-objects/076-task-list",
+  "prerequisites": [
+    "075"
+  ],
+  "goal": "组合对象、查询与状态管理。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

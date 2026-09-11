@@ -1,0 +1,14 @@
+{
+  "id": "067",
+  "title": "为免运费规则补测试",
+  "category": "06-errors",
+  "path": "06-errors/067-write-tests",
+  "prerequisites": [
+    "066"
+  ],
+  "goal": "主动编写断言识别错误实现。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

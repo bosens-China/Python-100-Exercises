@@ -1,0 +1,14 @@
+{
+  "id": "049",
+  "title": "复用筛选规则",
+  "category": "04-functions",
+  "path": "04-functions/049-filter-function",
+  "prerequisites": [
+    "048"
+  ],
+  "goal": "把筛选条件作为函数参数。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

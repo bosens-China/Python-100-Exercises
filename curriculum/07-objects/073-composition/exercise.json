@@ -1,0 +1,14 @@
+{
+  "id": "073",
+  "title": "组合购物车和商品",
+  "category": "07-objects",
+  "path": "07-objects/073-composition",
+  "prerequisites": [
+    "072"
+  ],
+  "goal": "通过组合使用已有对象。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

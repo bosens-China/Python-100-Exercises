@@ -1,0 +1,14 @@
+{
+  "id": "086",
+  "title": "提取路径中的任务 ID",
+  "category": "09-http",
+  "path": "09-http/086-path-id",
+  "prerequisites": [
+    "085"
+  ],
+  "goal": "把路径结构转换为业务参数。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

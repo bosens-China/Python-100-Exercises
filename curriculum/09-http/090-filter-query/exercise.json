@@ -1,0 +1,14 @@
+{
+  "id": "090",
+  "title": "按完成状态筛选接口结果",
+  "category": "09-http",
+  "path": "09-http/090-filter-query",
+  "prerequisites": [
+    "089"
+  ],
+  "goal": "解析布尔查询值。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}

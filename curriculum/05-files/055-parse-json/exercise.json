@@ -1,0 +1,14 @@
+{
+  "id": "055",
+  "title": "解析 JSON 配置",
+  "category": "05-files",
+  "path": "05-files/055-parse-json",
+  "prerequisites": [
+    "054"
+  ],
+  "goal": "把 JSON 文本转换为 Python 数据。",
+  "starter_files": [
+    "main.py"
+  ],
+  "entrypoint": "main.py"
+}
