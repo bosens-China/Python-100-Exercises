@@ -180,4 +180,10 @@ dmypy.json
 cython_debug/
 
 # VSCode
-.vscode/ 
+.vscode/
+# Online practice app
+node_modules/
+web/public/course.json
+web/public/runtime/
+web/test-results/
+web/playwright-report/

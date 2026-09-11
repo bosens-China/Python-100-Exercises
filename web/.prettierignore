@@ -1,0 +1,5 @@
+node_modules
+dist
+public/course.json
+public/runtime
+pnpm-lock.yaml

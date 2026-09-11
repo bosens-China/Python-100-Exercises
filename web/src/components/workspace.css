@@ -1,0 +1,190 @@
+.file-tabs {
+  padding: 0 12px;
+  background: var(--canvas);
+}
+.file-tabs .ant-tabs-nav {
+  margin: 0;
+}
+.file-tabs .ant-tabs-tab {
+  font-size: 11px;
+  padding: 10px 4px;
+}
+.file-tabs .ant-tabs-content-holder {
+  display: none;
+}
+.editor-container {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+.editor-container > div {
+  height: 100%;
+}
+.editor-container .cm-editor {
+  height: 100%;
+  font:
+    13px/1.85 'SFMono-Regular',
+    Consolas,
+    monospace;
+}
+.editor-container .cm-scroller {
+  overflow: auto;
+}
+.editor-container .cm-content {
+  padding-top: 18px;
+}
+.editor-container .cm-gutters {
+  border-right: 0;
+  background: var(--surface);
+  color: var(--muted);
+}
+.editor-container .cm-lineNumbers .cm-gutterElement {
+  padding: 0 12px 0 15px;
+}
+.editor-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 7px 16px;
+  color: var(--muted);
+  font-size: 10px;
+  border-top: 1px solid var(--line);
+}
+.save-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.save-dot.pending {
+  background: #bf9349;
+}
+.editor-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 16px;
+  border-top: 1px solid var(--line);
+}
+.editor-actions .ant-btn {
+  font-size: 12px;
+}
+.action-hint {
+  margin-left: auto;
+  font-size: 10px;
+}
+.results-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 16px 18px;
+  scrollbar-width: thin;
+}
+.runtime-ready {
+  font-size: 10px;
+  color: var(--accent);
+  font-weight: 400;
+}
+.runtime-loading {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 22px 10px;
+  font-size: 13px;
+}
+.runtime-loading p {
+  font-size: 11px;
+  color: var(--muted);
+  margin: 7px 0 0;
+}
+.result-empty .ant-empty {
+  margin: 10px 0;
+}
+.result-empty .ant-empty-description {
+  font-size: 12px;
+  color: var(--muted);
+}
+.result-empty p {
+  font-size: 11px;
+  margin-top: 7px;
+}
+.result-summary {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 12px;
+  border-radius: 7px;
+  background: var(--soft);
+  margin-bottom: 10px;
+}
+.result-summary > .anticon {
+  font-size: 20px;
+  color: var(--accent);
+}
+.result-summary.failure {
+  background: var(--code);
+}
+.result-summary.failure > .anticon {
+  color: #cc7855;
+}
+.result-summary strong {
+  display: block;
+  font-size: 12px;
+}
+.result-summary span:not(.anticon):not(.ant-btn-icon) {
+  font-size: 10px;
+}
+.result-summary div > span {
+  display: block;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.result-summary .ant-btn {
+  margin-left: auto;
+}
+.case-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 11px;
+}
+.case-label .ant-tag {
+  margin-left: auto;
+  font-size: 10px;
+}
+.passed-icon {
+  color: var(--accent);
+}
+.failed-icon {
+  color: #cc7855;
+}
+.case-detail {
+  font-size: 12px;
+}
+.case-detail summary {
+  color: var(--muted);
+  cursor: pointer;
+}
+.not-found {
+  flex: 1;
+  display: grid;
+  place-items: center;
+}
+@media (max-width: 1250px) {
+  .course-sidebar {
+    width: 240px;
+  }
+  .header-caption {
+    display: none;
+  }
+  .action-hint {
+    display: none;
+  }
+  .question-scroll {
+    padding: 24px;
+  }
+}

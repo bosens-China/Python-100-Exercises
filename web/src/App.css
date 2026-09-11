@@ -1,0 +1,351 @@
+.application {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.app-header {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  height: 68px;
+  padding: 0 26px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 23px;
+  font-weight: 750;
+  letter-spacing: -0.7px;
+  text-decoration: none;
+  color: var(--text);
+}
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  color: white;
+  background: #187f69;
+  font-size: 22px;
+}
+.brand-100 {
+  color: var(--accent);
+  margin-left: 5px;
+}
+.header-divider {
+  height: 20px;
+  width: 1px;
+  background: var(--line);
+  margin: 0 22px;
+}
+.header-caption {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+.header-tools {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.local-badge {
+  color: var(--muted);
+  font-size: 12px;
+  margin-right: 12px;
+}
+.practice-layout {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  padding: 16px 16px 16px 0;
+  gap: 12px;
+}
+.course-sidebar {
+  width: 266px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.sidebar-heading {
+  padding: 12px 20px 16px 24px;
+}
+.sidebar-heading h2 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 650;
+}
+.learning-progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.learning-progress strong {
+  color: var(--accent);
+  font-size: 19px;
+  font-variant-numeric: tabular-nums;
+}
+.learning-progress small {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--muted);
+}
+.sidebar-heading .ant-progress {
+  margin-bottom: 14px;
+}
+.chapter-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  padding: 0 8px 0 12px;
+}
+.chapter-scroll .ant-collapse-header {
+  padding: 12px 10px !important;
+  align-items: center !important;
+}
+.chapter-scroll .ant-collapse-body {
+  padding: 0 0 8px !important;
+}
+.chapter-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 12px;
+  font-weight: 650;
+}
+.chapter-number {
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  font-size: 10px;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+.exercise-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.exercise-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  padding: 10px 10px;
+  width: 100%;
+  border: 0;
+  border-radius: 6px;
+  color: var(--text);
+  background: transparent;
+  font-size: 12px;
+}
+.exercise-link:hover {
+  background: var(--line);
+}
+.exercise-link.selected {
+  background: var(--soft);
+  color: var(--accent);
+  font-weight: 600;
+  box-shadow: inset 3px 0 var(--accent);
+}
+.exercise-number {
+  font:
+    10px ui-monospace,
+    monospace;
+  color: var(--muted);
+}
+.exercise-name {
+  flex: 1;
+}
+.draft-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #bf9349;
+}
+.sidebar-foot {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid var(--line);
+  padding: 18px 24px 2px;
+  color: var(--muted);
+}
+.sidebar-foot > .anticon {
+  font-size: 22px;
+}
+.sidebar-foot strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+}
+.sidebar-foot span:not(.anticon) {
+  font-size: 10px;
+}
+.workspace {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: 0 3px 12px #10251b04;
+}
+.ant-splitter-panel {
+  overflow: hidden !important;
+}
+.panel-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  height: 44px;
+  min-height: 44px;
+  padding: 0 18px;
+  font-size: 12px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--line);
+}
+.panel-label > .anticon {
+  color: var(--muted);
+  font-size: 14px;
+}
+.panel-label .ant-tag {
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 10px;
+}
+.question-panel,
+.code-panel,
+.results-panel {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.question-scroll {
+  flex: 1;
+  overflow: auto;
+  padding: 30px 28px;
+  scrollbar-width: thin;
+}
+.question-intro {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+}
+.question-intro h1 {
+  font-size: 26px;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+  margin: 10px 0 12px;
+  font-weight: 650;
+}
+.question-intro p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+.text-link {
+  background: none;
+  border: 0;
+  color: var(--muted);
+  font-size: 11px;
+  padding: 0;
+}
+.markdown {
+  font-size: 13px;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+.markdown h2 {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 26px 0 12px;
+  font-weight: 650;
+}
+.markdown h2:first-child {
+  margin-top: 0;
+}
+.markdown h3 {
+  font-size: 13px;
+  margin: 18px 0 10px;
+}
+.markdown p {
+  margin-bottom: 12px;
+}
+.markdown ul,
+.markdown ol {
+  padding-left: 22px;
+}
+.markdown li {
+  margin-bottom: 5px;
+}
+.markdown pre,
+.case-detail pre {
+  background: var(--code);
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  overflow: auto;
+  font:
+    12px/1.8 'SFMono-Regular',
+    Consolas,
+    monospace;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.markdown code {
+  font-family: 'SFMono-Regular', Consolas, monospace;
+  font-size: 12px;
+  background: var(--code);
+  border-radius: 3px;
+  padding: 2px 4px;
+}
+.markdown pre code {
+  padding: 0;
+}
+.markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+.markdown td,
+.markdown th {
+  padding: 8px;
+  border: 1px solid var(--line);
+  text-align: left;
+}
+.markdown details {
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 10px 14px;
+  margin: 10px 0;
+}
+.markdown summary {
+  cursor: pointer;
+  font-weight: 550;
+}
+.markdown details[open] summary {
+  margin-bottom: 10px;
+}
+.question-note {
+  border-top: 1px solid var(--line);
+  margin-top: 28px;
+  padding-top: 18px;
+  font-size: 11px;
+  color: var(--muted);
+}
