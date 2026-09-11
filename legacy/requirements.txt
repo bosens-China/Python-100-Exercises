@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+sqlalchemy
+passlib[bcrypt]
+python-jose[cryptography]
+pydantic-settings
+alembic
+slowapi
+typer
+aiosqlite
+requests
+pytest
+pytest-mock
+ruff
