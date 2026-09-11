@@ -1,76 +1,44 @@
-# Python-100-Exercises
+# Python 100：从零到项目
 
-![image](./image.png)
+面向零基础与转行学习者，通过 100 道渐进练习，训练初级 Python 开发中的数据处理、业务实现、测试与调试能力。
 
-![GitHub issues](https://img.shields.io/github/issues/bosens-China/Python-100-Exercises) ![GitHub forks](https://img.shields.io/github/forks/bosens-China/Python-100-Exercises) ![GitHub stars](https://img.shields.io/github/stars/bosens-China/Python-100-Exercises)
+**题库与桌面端在线练习前端已实现，尚未发布到 GitHub Pages。** 学习者可以全程在线读题、写代码、运行和自动检查，无需安装 Python 或使用终端。
 
-这个项目的诞生是因为自己想要转行 AI 方向，此外女朋友对 Python 也有很浓厚的兴趣，但是都说实战是最好的老师，所以就有了这个仓库可以在学习一阶段后通过题目来去对照 APi 和知识点进行复习和练习。
+## 课程
 
-这个仓库包含了 100 道题目，全部都有相关的测试用例，此外还包含了一些最佳工程实践。
+从[课程目录](./curriculum/README.md)开始浏览。题目按 10 个能力大类组织：基础语法、条件与循环、数据结构、函数与代码组织、文件与数据处理、异常与调试、类与对象、数据库、HTTP 与接口逻辑、综合项目。
 
-## 课程大纲
+每题包含知识铺垫、明确的输入输出约定、示例、起始代码、两层提示和行为测试。后续内容复用已学知识；最后的任务清单项目提供各步骤的独立工作区，不依赖其他题的执行状态。
 
-- 第一部分 (1-40 题): Python 核心与面向对象
-  - 掌握变量、控制流、函数、类、继承及错误处理等基础内功。
-- 第二部分 (41-50 题): Python 进阶特性
-  - 学习文件操作、网络请求、装饰器、高阶函数等实用高级技巧。
-- 第三部分 (51-100 题): 后端 API 项目实战
-  - 使用 FastAPI，从零到一构建一个带数据库、用户认证和授权的完整 API。
+- 自动测试验证结果及适用边界，允许不同实现方式。
+- 文件题使用练习工作区，数据库题使用内存 SQLite，接口题使用模拟请求响应。
+- 全部通过意味着满足课程已覆盖的验收要求，不等同于掌握所有开发工作或获得就业保证；模拟接口也不等同于生产服务部署经验。
 
-> 关于 `part_4_oop/main.py` 文件
->
-> 请注意，从第三部分（练习 51）开始，你将进入一个完整的项目实战阶段。`part_4_oop/main.py` 是这个 FastAPI 应用的主入口文件。后续的很多练习，都需要你在这个文件的基础上，不断地进行修改、添加和重构，就像在真实的工作中一样。它将从一个简单的文件，最终演变成一个功能完备的 Web 应用。
+## 在线体验
 
-## 快速开始
+网站提供分类导航、多文件编辑、运行示例、提交检查、错误反馈，以及当前浏览器的草稿和进度保存、导入导出。使用 Vite + React（开启 React Compiler）、Ant Design 和 Pyodide，可由 GitHub Pages 静态托管，无需判题后端。100 道参考实现和起始代码已通过真实浏览器验证。
 
-仅需几步，即可开始你的 Python 学习之旅。
+维护者开发、构建和部署步骤见 [前端说明](./web/README.md)。
 
-### 第一步：安装 Python
+产品边界和实施状态见[文档索引](./docs/index.md)。仓库中的维护命令面向贡献者，不是学习者的使用步骤。
 
-请确保你的系统中已安装 Python (>= 3.8 版本)。可从 [Python 官网](https://www.python.org/downloads/) 下载。
+## 维护与贡献
 
-### 第二步：安装 uv
-
-`uv` 是一个现代、极速的 Python 包管理工具。
-
-- macOS / Linux: `curl -LsSf https://astral.sh/uv/install.sh | sh`
-- Windows: `powershell -c "irm https://astral.sh/uv/install.ps1 | iex"`
-
-### 第三步：拉取项目
+新课程标识为 `python-100-v2`，同一编号与旧版题目不再一一对应。贡献题目、调整测试或报告问题前，请阅读[题库作者说明](./docs/authoring.md)。
 
 ```bash
-# 克隆本项目
-git clone https://github.com/bosens-China/Python-100-Exercises.git
+# 以下是维护者命令，需要已有 Python 3.12 环境。
+python -m tools.course validate
+python -m tools.course check
 
-# 进入项目目录
-cd Python-100-Exercises
+# 工具回归测试沿用 pytest。
+python -m pip install -r requirements.txt
+python -m pytest -q
 
-# 使用uv创建虚拟环境
-uv venv
-
-# 激活虚拟环境
-# macOS / Linux: source .venv/bin/activate
-# Windows: .venv\Scripts\activate
-
-# 安装所有依赖
-uv pip install -r requirements.txt
+# 为网站导出题目、起始文件和测试，不包含当前题的参考答案。
+python -m tools.course export dist/course.json
 ```
 
-环境配置完成。
+参考实现公开保存在每题的 `solution/`，用于维护与自学对照。自动反馈适用于自学，不承诺隐藏测试或防作弊。
 
-### 运行测试用例
-
-为了获得实时反馈，当你完成一道题目后（例如第 5 题 `exercise_005.py`），我们推荐使用 `uv run` 来运行测试。这种方式可以确保你始终使用虚拟环境中正确的工具版本：
-
-```bash
-uv run pytest part_1_basics/test_exercise_005.py
-```
-
-这个命令会精准地只测试你当前关心的题目。后续你会在终端看到测试是通过还是失败。
-
-## 参与贡献
-
-相关的题目全部通过 AI 生成，所以在这个过程中肯定会有不完善甚至错误的地方，欢迎通过下面的方式来进行反馈，当然如果你完成一道题目或者遇到问题也可以在 issues 来搜索查看其他人的解题思路。
-
-- 提交答案: 完成题目后，欢迎通过 [答案提交 Issue](https://github.com/bosens-China/Python-100-Exercises/issues/new?assignees=&labels=答案,待审核&template=answer_submission.yml&title=[答案提交]+题目+) 分享你的解法。
-- 反馈与建议: 如有任何问题或建议，请通过 [意见反馈 Issue](https://github.com/bosens-China/Python-100-Exercises/issues/new?assignees=&labels=反馈,建议&template=feedback.yml&title=[反馈/建议]+) 进行反馈。
+旧版内容保存在 [legacy](./legacy/README.md)，不进入当前课程和默认检查。反馈请注明课程版本、题号、输入与实际结果；也可以通过仓库 Issues 分享解题思路。
