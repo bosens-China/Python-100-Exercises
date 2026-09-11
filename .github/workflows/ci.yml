@@ -1,0 +1,71 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_call:
+    inputs:
+      upload-pages:
+        description: Prepare the verified build for Pages deployment
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: checks-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: Quality checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      SKIP_SIMPLE_GIT_HOOKS: '1'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '24'
+      - name: Install dependencies
+        run: |
+          python -m pip install -r requirements.txt
+          npm install --global pnpm@11.17.0
+          pnpm --dir web install --frozen-lockfile
+      - name: Verify grading tools and curriculum
+        run: |
+          python -m pytest -q
+          python -m tools.course validate
+          python -m tools.course check
+      - name: Check and build website
+        run: |
+          pnpm --dir web lint
+          pnpm --dir web format:check
+          pnpm --dir web test
+          pnpm --dir web build
+      - name: Verify browser execution and Pages subpath
+        run: |
+          pnpm --dir web exec playwright install --with-deps chromium
+          pnpm --dir web test:browser
+      - name: Retain browser failure diagnostics
+        if: failure()
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        with:
+          name: browser-test-results
+          path: web/test-results/
+          if-no-files-found: ignore
+          retention-days: 7
+      - name: Prepare verified Pages artifact
+        if: inputs.upload-pages
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
+        with:
+          path: web/dist
