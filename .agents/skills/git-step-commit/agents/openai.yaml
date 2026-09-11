@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git Step Commit"
+  short_description: "Configure or learn preferences, commit changes, and safely push"
+  default_prompt: "Use $git-step-commit to configure or personalize commit preferences, or organize, commit, and safely push my Git changes."

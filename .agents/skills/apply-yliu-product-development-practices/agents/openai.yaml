@@ -1,0 +1,4 @@
+interface:
+  display_name: "Yliu Product Development Practices"
+  short_description: "Apply Yliu's end-to-end product development conventions"
+  default_prompt: "Use $apply-yliu-product-development-practices to build or update this product with Yliu's project, architecture, implementation, UI, testing, and validation practices."

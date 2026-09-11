@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "skills": {
+    "apply-yliu-product-development-practices": {
+      "source": "bosens-China/my-skills",
+      "sourceType": "github",
+      "skillPath": "skills/apply-yliu-product-development-practices/SKILL.md",
+      "computedHash": "ace9deb587d7bb1a1bef187f09aa473b364b4c2c8e1cdd00029e1fc618e8e9ff"
+    },
+    "chinese-article-writing": {
+      "source": "bosens-China/my-skills",
+      "sourceType": "github",
+      "skillPath": "skills/chinese-article-writing/SKILL.md",
+      "computedHash": "73804701320943f1af7ccb99a6eb68c7c821110250070a1ac5f1161c6927cd6a"
+    },
+    "file-line-audit": {
+      "source": "bosens-China/my-skills",
+      "sourceType": "github",
+      "skillPath": "skills/file-line-audit/SKILL.md",
+      "computedHash": "a35b472406988fcc52e16d4597be382c32b38ab57ad3198b529da13bf41e2698"
+    },
+    "git-step-commit": {
+      "source": "bosens-China/my-skills",
+      "sourceType": "github",
+      "skillPath": "skills/git-step-commit/SKILL.md",
+      "computedHash": "fe6bfca80d905d833b9db15ecf465753203d108e6c7b116a76faa4061244e8cf"
+    },
+    "manage-prd-docs": {
+      "source": "bosens-China/my-skills",
+      "sourceType": "github",
+      "skillPath": "skills/manage-prd-docs/SKILL.md",
+      "computedHash": "44f36df488557580b3958fc10cfe1b1859018e9759364033c5da58cc52a6cc85"
+    }
+  }
+}
