@@ -40,4 +40,4 @@
 
 ## 文档与兼容性影响
 
-桌面端实现、题库浏览器兼容性和 [GitHub Pages](https://bosens-china.github.io/Python-100-Exercises/) 首次发布验收已完成，现行行为已归入[在线学习工作区](../../prd/online-practice.md)。本实施目录继续跟踪小屏优化的线上发布与 `main` 分支保护。账号同步与可信考核不属于当前已确认范围，不预建后端。
+桌面端实现、题库浏览器兼容性和 [GitHub Pages](https://bosens-china.github.io/Python-100-Exercises/) 发布验收已完成，现行行为已归入[在线学习工作区](../../prd/online-practice.md)。本实施目录继续跟踪 `main` 分支保护。账号同步与可信考核不属于当前已确认范围，不预建后端。
