@@ -1,10 +1,11 @@
 """
-题目 099: 准备 `requirements.txt`
+题目 099: 固定项目依赖版本
 
 要求:
-在项目根目录，运行命令生成一个包含所有项目依赖的 `requirements.txt` 文件。
+在项目根目录生成 `requirements.lock`，记录当前 Python 环境中的依赖及其精确版本。
+保留现有 `requirements.txt`，供学习者了解直接依赖。
 
 提示:
-`uv pip freeze > requirements.txt`
-这个文件对于让其他人能够复现你的开发环境至关重要。
+`uv pip freeze > requirements.lock`
+提交前检查文件中没有本机路径或私人地址。
 """

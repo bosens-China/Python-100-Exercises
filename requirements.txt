@@ -1,4 +1,6 @@
 fastapi
+httpx
+python-multipart
 uvicorn
 sqlalchemy
 passlib[bcrypt]

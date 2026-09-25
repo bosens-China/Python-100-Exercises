@@ -1,9 +1,9 @@
-import pytest
-import os
+from pathlib import Path
 
-def test_readme_is_substantial():
-    assert os.path.exists("README.md")
-    with open("README.md", "r", encoding="utf-8") as f:
-        content = f.read()
-        # A simple check for a reasonably detailed README
-        assert len(content) > 500, "README.md is too short. Please add more details."
+
+def test_project_readme_covers_delivery():
+    readme = Path("PROJECT_README.md")
+    assert readme.is_file(), "请为 API 项目创建 PROJECT_README.md"
+    content = readme.read_text(encoding="utf-8").lower()
+    for item in ("# ", "uvicorn", "pytest", "curl", "/todos"):
+        assert item in content, f"交付文档缺少：{item}"

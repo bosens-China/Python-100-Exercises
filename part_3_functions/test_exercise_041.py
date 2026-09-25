@@ -1,4 +1,5 @@
 import pytest
+import requests
 from part_3_functions.exercise_041 import get_json_from_url
 
 def test_get_json_from_url(mocker):

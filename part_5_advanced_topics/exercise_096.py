@@ -1,12 +1,17 @@
 """
-题目 096: 代码性能分析
+题目 096: 使用标准库分析函数性能
 
 要求:
-编写一个独立的Python脚本，导入你的某个函数（例如，一个复杂的列表处理函数）。
-使用 `cProfile` 模块来运行这个函数并打印出性能分析报告。
+实现 `profile_call(function, *args, **kwargs)`。
+使用 `cProfile` 执行函数一次，返回 `(函数返回值, 性能报告字符串)`。
+报告应包含函数调用统计，方便排查慢函数。
 
 提示:
-`import cProfile`
-`from your_module import your_function`
-`cProfile.run('your_function()')`
+`cProfile.Profile().runcall(...)` 可以取得返回值；
+`pstats.Stats` 配合 `io.StringIO` 可以生成报告字符串。
 """
+
+
+def profile_call(function, *args, **kwargs):
+    # 在这里写下你的代码
+    pass

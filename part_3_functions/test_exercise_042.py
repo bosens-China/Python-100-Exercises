@@ -10,7 +10,8 @@ def test_safe_get_request_success(mocker):
     assert response is not None
 
 def test_safe_get_request_failure(mocker):
-    mocker.patch("requests.get", side_effect=requests.exceptions.RequestException)
+    request = mocker.patch("requests.get", side_effect=requests.exceptions.RequestException)
     
     response = safe_get_request("https://bad.url/data")
     assert response is None
+    request.assert_called_once_with("https://bad.url/data")

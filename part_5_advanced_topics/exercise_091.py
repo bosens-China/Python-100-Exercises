@@ -4,7 +4,8 @@
 要求:
 1. 安装 `slowapi`: `uv pip install slowapi`
 2. 在你的 `main.py` 中，集成 `slowapi`。
-3. 为 `/login/token` 端点设置一个限制，例如“每分钟5次”。
+3. 为 `/login/token` 端点设置每分钟最多 5 次请求的限制。
+4. 超过限制时应返回 HTTP 429。
 
 提示:
 需要一个 `Limiter` 实例，并将其作为应用的中间件或依赖项。

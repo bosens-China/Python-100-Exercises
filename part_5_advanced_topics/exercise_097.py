@@ -1,13 +1,17 @@
 """
-题目 097: 理解Python的GIL
+题目 097: 为不稳定操作添加重试
 
 要求:
-创建一个名为 `GIL_EXPLANATION.md` 的Markdown文件。
-在文件中，用你自己的话简要回答以下问题：
-1. 什么是Python的全局解释器锁（GIL）？
-2. 它对CPU密集型任务和I/O密集型任务的多线程性能分别有什么影响？
-3. 为什么CPython要保留GIL？
+实现 `retry_call(function, attempts=3)`，调用不需要参数的 `function`。
+如果调用抛出异常，就重试，最多调用 `attempts` 次；成功时立即返回结果。
+所有尝试都失败时，重新抛出最后一次异常。
+`attempts` 小于 1 时抛出 `ValueError`。
 
 提示:
-这是一个理论和沟通能力的练习，在面试中非常重要。
+先验证参数，再使用循环。不要吞掉最后一次异常。
 """
+
+
+def retry_call(function, attempts=3):
+    # 在这里写下你的代码
+    pass

@@ -1,76 +1,55 @@
-# Python-100-Exercises
+# Python 100：初级工程师练习
 
-![image](./image.png)
+100 道循序渐进的 Python 练习，最低支持 Python 3.12。前半段练基础与标准库；后半段持续完成一个待办事项 API 项目。每题有独立的题目文件和测试文件，题目源码保留待实现部分。
 
-![GitHub issues](https://img.shields.io/github/issues/bosens-China/Python-100-Exercises) ![GitHub forks](https://img.shields.io/github/forks/bosens-China/Python-100-Exercises) ![GitHub stars](https://img.shields.io/github/stars/bosens-China/Python-100-Exercises)
+## 学习路线
 
-这个项目的诞生是因为自己想要转行 AI 方向，此外女朋友对 Python 也有很浓厚的兴趣，但是都说实战是最好的老师，所以就有了这个仓库可以在学习一阶段后通过题目来去对照 APi 和知识点进行复习和练习。
+| 题号 | 模块 | 形式 |
+| --- | --- | --- |
+| 001–010 | 语法与函数入门 | 独立练习 |
+| 011–020 | 字符串与容器 | 独立练习 |
+| 021–030 | 控制流与数据处理 | 独立练习 |
+| 031–035 | 面向对象 | 独立练习 |
+| 036–040 | 文件与综合练习 | 独立练习 |
+| 041–050 | 网络、日期与常用工具 | 独立练习 |
+| 051–060 | Web API 起步 | 连续项目 |
+| 061–072 | 数据库与项目结构 | 连续项目 |
+| 073–085 | 认证与授权 | 连续项目 |
+| 086–100 | 交付与工程实践 | 项目题与独立练习 |
 
-这个仓库包含了 100 道题目，全部都有相关的测试用例，此外还包含了一些最佳工程实践。
+51–95 题以及 99–100 题围绕 `part_4_oop/main.py` 逐步扩展项目。它们共享代码状态，应按顺序完成。96–98 题重新回到可独立运行的工程练习。
 
-## 课程大纲
+## 在浏览器做题
 
-- 第一部分 (1-40 题): Python 核心与面向对象
-  - 掌握变量、控制流、函数、类、继承及错误处理等基础内功。
-- 第二部分 (41-50 题): Python 进阶特性
-  - 学习文件操作、网络请求、装饰器、高阶函数等实用高级技巧。
-- 第三部分 (51-100 题): 后端 API 项目实战
-  - 使用 FastAPI，从零到一构建一个带数据库、用户认证和授权的完整 API。
+`web/` 是 React + Vite + React Compiler + Ant Design + UnoCSS 的静态应用，可部署到 GitHub Pages。题目直接从仓库中的 `exercise_*.py` 与 `test_exercise_*.py` 构建，避免维护第二份题库。
 
-> 关于 `part_4_oop/main.py` 文件
->
-> 请注意，从第三部分（练习 51）开始，你将进入一个完整的项目实战阶段。`part_4_oop/main.py` 是这个 FastAPI 应用的主入口文件。后续的很多练习，都需要你在这个文件的基础上，不断地进行修改、添加和重构，就像在真实的工作中一样。它将从一个简单的文件，最终演变成一个功能完备的 Web 应用。
+- 001–050、096–098：在浏览器写代码并运行对应测试。
+- 连续项目题：在网页阅读要求、保存草稿与进度，在本地仓库修改项目并运行测试。
+- 草稿与完成状态保存在当前浏览器的 LocalStorage 中，不会自动跨设备同步。
 
-## 快速开始
-
-仅需几步，即可开始你的 Python 学习之旅。
-
-### 第一步：安装 Python
-
-请确保你的系统中已安装 Python (>= 3.8 版本)。可从 [Python 官网](https://www.python.org/downloads/) 下载。
-
-### 第二步：安装 uv
-
-`uv` 是一个现代、极速的 Python 包管理工具。
-
-- macOS / Linux: `curl -LsSf https://astral.sh/uv/install.sh | sh`
-- Windows: `powershell -c "irm https://astral.sh/uv/install.ps1 | iex"`
-
-### 第三步：拉取项目
+本地启动网页：
 
 ```bash
-# 克隆本项目
-git clone https://github.com/bosens-China/Python-100-Exercises.git
+cd web
+npm ci
+npm run dev
+```
 
-# 进入项目目录
-cd Python-100-Exercises
+生产构建：`npm run build`。GitHub Pages 构建流程位于 `.github/workflows/pages.yml`；仓库管理员需要在 **Settings → Pages → Build and deployment** 里选择 **GitHub Actions**。构建产物位于 `web/dist`，站点路径为 `/Python-100-Exercises/`。
 
-# 使用uv创建虚拟环境
-uv venv
+## 在本地做题
 
-# 激活虚拟环境
-# macOS / Linux: source .venv/bin/activate
-# Windows: .venv\Scripts\activate
+安装 Python 3.12 或更新版本、[uv](https://docs.astral.sh/uv/) 后，在仓库根目录运行：
 
-# 安装所有依赖
+```bash
+uv venv --python 3.12
 uv pip install -r requirements.txt
+uv run pytest part_1_basics/test_exercise_005.py -q
 ```
 
-环境配置完成。
+Windows 使用 `.venv\Scripts\activate`、macOS/Linux 使用 `source .venv/bin/activate` 可激活环境。完成其他题目时，把测试文件路径替换为对应的 `test_exercise_NNN.py`。题目源码尚未完成，所以运行整套测试会出现预期的失败；连续项目题还依赖前面的实现和新增文件。
 
-### 运行测试用例
+## 反馈
 
-为了获得实时反馈，当你完成一道题目后（例如第 5 题 `exercise_005.py`），我们推荐使用 `uv run` 来运行测试。这种方式可以确保你始终使用虚拟环境中正确的工具版本：
-
-```bash
-uv run pytest part_1_basics/test_exercise_005.py
-```
-
-这个命令会精准地只测试你当前关心的题目。后续你会在终端看到测试是通过还是失败。
-
-## 参与贡献
-
-相关的题目全部通过 AI 生成，所以在这个过程中肯定会有不完善甚至错误的地方，欢迎通过下面的方式来进行反馈，当然如果你完成一道题目或者遇到问题也可以在 issues 来搜索查看其他人的解题思路。
-
-- 提交答案: 完成题目后，欢迎通过 [答案提交 Issue](https://github.com/bosens-China/Python-100-Exercises/issues/new?assignees=&labels=答案,待审核&template=answer_submission.yml&title=[答案提交]+题目+) 分享你的解法。
-- 反馈与建议: 如有任何问题或建议，请通过 [意见反馈 Issue](https://github.com/bosens-China/Python-100-Exercises/issues/new?assignees=&labels=反馈,建议&template=feedback.yml&title=[反馈/建议]+) 进行反馈。
+- [提交解法](https://github.com/bosens-China/Python-100-Exercises/issues/new?template=answer_submission.yml)
+- [报告题目或测试问题](https://github.com/bosens-China/Python-100-Exercises/issues/new?template=feedback.yml)

@@ -1,13 +1,8 @@
-import pytest
 from typer.testing import CliRunner
-# Assuming the cli app is in cli.py
-# from cli import app 
+from part_4_oop.cli import app
 
-runner = CliRunner()
 
-# This test is conceptual and depends on the cli.py file existing.
-def test_cli_placeholder():
-    # result = runner.invoke(app, ["create-user", "cli@example.com", "pass"])
-    # assert result.exit_code == 0
-    # assert "User created" in result.stdout
-    assert True
+def test_create_user_command_is_available():
+    result = CliRunner().invoke(app, ["--help"])
+    assert result.exit_code == 0
+    assert "create-user" in result.output or ("email" in result.output.lower() and "password" in result.output.lower())

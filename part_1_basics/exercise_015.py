@@ -1,15 +1,14 @@
 """
-题目 015: 使用函数式API处理列表
+题目 015: 使用列表推导式处理数据
 
 要求:
-1. 编写一个名为 `square_list(numbers)` 的函数，使用 `map` 和一个 `lambda` 函数，返回一个新列表，其中每个数字都是原列表数字的平方。
-2. 编写一个名为 `filter_odd_numbers(numbers)` 的函数，使用 `filter` 和一个 `lambda` 函数，返回一个只包含奇数的新列表。
-3. 编写一个名为 `sum_with_reduce(numbers)` 的函数，使用 `functools.reduce` 和一个 `lambda` 函数，计算列表中所有数字的和。
+1. 编写 `square_list(numbers)`，返回每个数字平方后的新列表。
+2. 编写 `filter_odd_numbers(numbers)`，返回只包含奇数的新列表。
+3. 编写 `sum_numbers(numbers)`，返回所有数字的和；空列表返回 0。
 
 提示:
-对于第3点，你可能需要 `from functools import reduce`。
+前两项可以使用列表推导式。求和可以使用内置函数 `sum`。
 """
-from functools import reduce
 
 def square_list(numbers):
     # 在这里写下你的代码
@@ -19,6 +18,6 @@ def filter_odd_numbers(numbers):
     # 在这里写下你的代码
     pass
 
-def sum_with_reduce(numbers):
+def sum_numbers(numbers):
     # 在这里写下你的代码
     pass

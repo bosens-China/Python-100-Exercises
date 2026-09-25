@@ -1,5 +1,5 @@
 """
-题目 051: Setup FastAPI and a "Hello World" Endpoint
+题目 051: 创建第一个 FastAPI 端点
 
 要求:
 修改 `part_4_oop/main.py` 文件。

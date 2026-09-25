@@ -3,7 +3,7 @@
 
 要求:
 1. 安装 `typer`: `uv pip install typer`
-2. 创建一个 `cli.py` 文件。
+2. 创建 `part_4_oop/cli.py` 文件，并导出 `app = typer.Typer()`。
 3. 使用 `typer` 创建一个可以从命令行添加新用户的函数。
 
 提示:
