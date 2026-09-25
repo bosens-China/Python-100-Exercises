@@ -1,6 +1,6 @@
 # Python 100：从零到项目
 
-面向零基础与转行学习者的 Python 练习课程。通过 **10 个章节、100 道渐进练习**，从第一条返回语句学到多文件任务清单项目。
+面向初级工程师的 Python 3.12+ 练习课程。通过 **10 个章节、100 道渐进练习**，从基础语法学到多文件任务清单项目。
 
 在浏览器里读题、写代码、查看检查结果，逐步练习初级开发中的业务实现、数据处理、测试与调试。
 
@@ -8,10 +8,7 @@
 
 ## 开始学习
 
-**当前状态：题库和桌面端在线工作区已实现，GitHub Pages 待发布。** 现在可以从[课程目录](./curriculum/README.md)阅读题目。网站发布后，学习者打开浏览器即可做题，无需安装 Python 或使用终端。
-
-- 仓库地址：[bosens-China/Python-100-Exercises](https://github.com/bosens-China/Python-100-Exercises)
-- 网站预留地址：[Python 100 在线练习](https://bosens-china.github.io/Python-100-Exercises/)（待发布）
+[打开在线练习](https://bosens-china.github.io/Python-100-Exercises/)即可在桌面浏览器做题，无需安装 Python。也可以从[课程目录](./curriculum/README.md)阅读全部题目。
 
 ## 你可以在这里做什么
 
@@ -81,7 +78,7 @@ python -m pip install -r requirements.txt
 python -m pytest -q
 ```
 
-完整的前端检查、浏览器测试和部署步骤见[前端说明](./web/README.md)。CI 已配置为检查 PR 与 main 推送；远端首次执行和 Pages 发布待完成。
+完整的前端检查、浏览器测试和部署步骤见[前端说明](./web/README.md)。CI 检查 PR 与 main 推送；Pages 使用手动发布工作流。
 
 | 目录 | 内容 |
 | --- | --- |

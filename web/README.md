@@ -41,7 +41,7 @@ pnpm --dir web test:browser
 
 Pages 手动发布复用同一套 CI，只发布这次检查通过的构建产物。普通 CI 仅有仓库读取权限；Pages 写入权限仅授予部署任务。不使用路径过滤，避免文档 PR 的必需检查一直等待。
 
-当前配置已在本地验证，尚未在 GitHub 执行。配置推送后应先确认远端 CI 成功，再把 `Quality checks` 设为 `main` 的必需状态检查。分支保护属于仓库设置，工作流文件本身不会启用它。
+远端 CI 已通过。维护者可把 `Quality checks` 设为 `main` 的必需状态检查；分支保护需在仓库设置中启用。
 
 工作流复用方式见 [GitHub 官方说明](https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows)。
 
@@ -49,14 +49,11 @@ Pages 手动发布复用同一套 CI，只发布这次检查通过的构建产�
 
 构建产物是 `web/dist/`。使用相对资源路径和 `#/exercises/001` 哈希路由，可部署在仓库子路径，题目直达链接刷新无需服务器回退规则。
 
-仓库已经提供手动部署工作流 `.github/workflows/pages.yml`。首次发布需由维护者：
+仓库使用手动部署工作流 `.github/workflows/pages.yml`。后续发布由维护者：
 
 1. 将改动推送到 GitHub 默认分支。
-2. 在仓库 Settings → Pages 中将 Source 设为 GitHub Actions。
-3. 在 Actions 中运行「Deploy Python 100 to Pages」。工作流通过验证后再发布。
-4. 用部署返回的地址验收第 001、100 题及直接链接刷新。
-
-当前仅完成本地构建与子路径测试，尚未发布到真实 Pages 地址。
+2. 在 Actions 中运行「Deploy Python 100 to Pages」。工作流通过验证后再发布。
+3. 用部署返回的地址验收第 001、100 题及直接链接刷新。
 
 ## 执行与保存约定
 
